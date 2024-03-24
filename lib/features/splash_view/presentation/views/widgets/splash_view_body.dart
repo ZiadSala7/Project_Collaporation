@@ -24,8 +24,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
     navigateToHome();
   }
 
-
-
   @override
   void dispose() {
     // TODO: implement dispose
@@ -39,7 +37,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-      //  Image.asset(''),
+        Image.asset('assets/images/ph1.jpg'),
         SlidingText(slidingAnimation: slidingAnimation),
       ],
     );
@@ -56,13 +54,14 @@ class _SplashViewBodyState extends State<SplashViewBody>
     ).animate(animationController);
     animationController.forward();
   }
-    void navigateToHome() {
-     Future.delayed(const Duration(seconds: 2), () {
-    Get.to(
-    const  MyHomePage(),
-      transition: Transition.fadeIn,
-      duration: const Duration(seconds: 3),
-    );
-  });
+
+  void navigateToHome() {
+    Future.delayed(const Duration(seconds: 2), () {
+      Get.to(
+        const HomeView(),
+        transition: Transition.fadeIn,
+        duration: const Duration(seconds: 3),
+      );
+    });
   }
 }
