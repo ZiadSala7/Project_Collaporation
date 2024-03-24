@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'features/home.dart';
 
 void main() {
@@ -16,4 +15,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
