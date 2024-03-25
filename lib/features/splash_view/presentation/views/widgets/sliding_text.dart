@@ -1,3 +1,4 @@
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class SlidingText extends StatelessWidget {
@@ -18,9 +19,7 @@ class SlidingText extends StatelessWidget {
             child: const Text(
               'مرحبا بك ....',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 26,
-              ),
+              style: Styless.textStyle28,
             ),
           );
         });
