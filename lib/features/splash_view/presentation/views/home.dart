@@ -1,3 +1,5 @@
+import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -22,24 +24,29 @@ class _HomeViewState extends State<HomeView> {
                 Color.fromARGB(255, 138, 136, 136), BlendMode.darken),
           ),
         ),
-        child: Center(
-            child: ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.amber,
-            shape: const BeveledRectangleBorder(
-              borderRadius: BorderRadius.zero,
-            ),
-            padding: const EdgeInsets.all(14),
-          ),
-          child: const Text(
-            'استكشف الان',
-            style: TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize: 23,
-            ),
-          ),
-        )),
+        child: Column(
+          children: [
+            Text(AppLocalizations.of(context)!.translate(LangKeys.appName).toString()),
+            Center(
+                child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.amber,
+                shape: const BeveledRectangleBorder(
+                  borderRadius: BorderRadius.zero,
+                ),
+                padding: const EdgeInsets.all(14),
+              ),
+              child: const Text(
+                'استكشف الان',
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 23,
+                ),
+              ),
+            )),
+          ],
+        ),
       ),
     );
   }
