@@ -1,4 +1,4 @@
-import 'package:cv_project_team/styles/image/app_images.dart';
+import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:flutter/material.dart';
 
 class PageUnderBuildScreen extends StatelessWidget {
