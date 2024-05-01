@@ -8,18 +8,25 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: CustomFadeInDown(
-          duration: 400,
-          child: Container(
-            alignment: Alignment.center,
-            height: 50,
-            // width: 50,
-            color: Colors.amber,
-            child: Text(AppLocalizations.of(context)!
-                .translate(LangKeys.appName)
-                .toString()),
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+          child: CustomFadeInDown(
+            duration: 400,
+            child: Container(
+              alignment: Alignment.center,
+              // height: 50,
+              // width: 50,
+              // color: Colors.black,
+              child: Column(
+                children: [
+                  Text(AppLocalizations.of(context)!
+                      .translate(LangKeys.appName)
+                      .toString()),
+                    Image.asset("assets/images/logo.jpg",fit: BoxFit.fill,),
+                ],
+              ),
+            ),
           ),
         ),
       ),
