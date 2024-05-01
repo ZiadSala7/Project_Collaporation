@@ -3,9 +3,15 @@ import 'package:cv_project_team/core/styles/theme/app_theme.dart';
 import 'package:cv_project_team/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 void main() {
-  runApp(const MyApp());
+runApp(
+   DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const MyApp()  , 
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {
