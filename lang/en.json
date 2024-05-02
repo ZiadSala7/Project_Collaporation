@@ -1,5 +1,8 @@
 {
   "language": "العربية",
-  "app_name": "The Adamic Monastery",
-  "lang_code": "English"
+  "app_name": "turath",
+  "lang_code": "English",
+  "settings": "settings",
+  "about": "about",
+  "home": "Home"
 }

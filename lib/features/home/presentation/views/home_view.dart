@@ -1,7 +1,12 @@
+import 'package:cv_project_team/core/app/constant.dart';
 import 'package:cv_project_team/core/common/animations/animate_do.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
+import 'package:cv_project_team/core/widgets/custom_drawer.dart';
+import 'package:cv_project_team/features/home/presentation/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -10,25 +15,25 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Center(
-          child: CustomFadeInDown(
-            duration: 400,
-            child: Container(
-              alignment: Alignment.center,
-              // height: 50,
-              // width: 50,
-              // color: Colors.black,
-              child: Column(
-                children: [
-                  Text(AppLocalizations.of(context)!
-                      .translate(LangKeys.appName)
-                      .toString()),
-                    Image.asset("assets/images/logo.jpg",fit: BoxFit.fill,),
-                ],
-              ),
+        drawer: const CustomDrawer(),
+        appBar: AppBar(
+          backgroundColor: AppColors.mainColor,
+          title: CustomFadeInRight(
+            duration: animationDuration,
+            child: Text(
+              AppLocalizations.of(context)!
+                  .translate(LangKeys.appName)
+                  .toString(),
+              style: Theme.of(context)
+                  .textTheme
+                  .displayMedium!
+                  .copyWith(color: Colors.white),
             ),
           ),
+          titleSpacing: 2,
+          centerTitle: true,
         ),
+        body: const HomeViewBody(),
       ),
     );
   }

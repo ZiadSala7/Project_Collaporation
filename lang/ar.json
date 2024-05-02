@@ -1,5 +1,8 @@
 {
   "language": "English",
-  "app_name": "الدير الاحمر",
-  "lang_code": "العربية"
+  "app_name": "تراث",
+  "lang_code": "العربية",
+  "settings": "الاعدادات",
+  "about": "عنا",
+  "home": "الصفحه الرئيسيه"
 }
