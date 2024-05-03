@@ -8,7 +8,7 @@ class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   // Override method to check if a given locale is supported by the app.
   @override
   bool isSupported(Locale locale) {
-    return ['en', 'ar'].contains(locale.languageCode);
+    return ['ar', 'en'].contains(locale.languageCode);
   }
 
   // Override method to load the AppLocalizations for a given locale.

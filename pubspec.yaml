@@ -33,13 +33,14 @@ dependencies:
   device_preview: ^1.1.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.5
   flutter_localization: ^0.2.0
   flutter_native_splash: ^2.4.0
   flutter_screenutil: ^5.9.0
 
 dev_dependencies:
-  flutter_lints: ^3.0.0
   flutter_launcher_icons: "^0.13.1"
+  flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
 
@@ -92,6 +93,5 @@ flutter:
           weight: 500
         - asset: assets/fonts/english/poppins/Poppins-Regular.ttf
           weight: 400
-
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
