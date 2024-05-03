@@ -4,5 +4,6 @@
   "lang_code": "English",
   "settings": "settings",
   "about": "about",
-  "home": "Home"
+  "home": "Home",
+  "changeLang" : "change language"
 }

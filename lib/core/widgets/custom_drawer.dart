@@ -6,6 +6,7 @@ import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/widgets/custom_list_tile.dart';
+import 'package:cv_project_team/features/settings/settings_view.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -38,10 +39,11 @@ class CustomDrawer extends StatelessWidget {
                   .toString(),
               icon: const Icon(Icons.settings),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const PageUnderBuildScreen(),
+                      builder: (context) => const SettingsView(),
                     ));
               },
             ),
