@@ -1,6 +1,5 @@
 import 'package:cv_project_team/core/app/constant.dart';
 import 'package:cv_project_team/core/common/animations/animate_do.dart';
-import 'package:cv_project_team/core/common/screens/under_build_screen.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
@@ -24,7 +23,7 @@ class CustomDrawer extends StatelessWidget {
               accountEmail: Text(''),
               decoration: BoxDecoration(
                   color: AppColors.mainColor,
-                  image: DecorationImage(image: AssetImage(AppImages.turath))),
+                  image: DecorationImage(image: AssetImage(AppImages.imagesTurath))),
             ),
             CustomListTile(
               text: AppLocalizations.of(context)!

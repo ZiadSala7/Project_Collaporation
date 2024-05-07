@@ -65,6 +65,29 @@ flutter:
     - assets/images/
     - lang/ar.json
     - lang/en.json
+    - assets/images/others/
+    - assets/images/AlHekal/
+    - assets/images/AlHekal/eastHenya/
+    - assets/images/AlHekal/eastHenya/level 1/
+    - assets/images/AlHekal/eastHenya/level 2/
+    - assets/images/AlHekal/eastHenya/quba/
+    - assets/images/AlHekal/northHenya/
+    - assets/images/AlHekal/northHenya/level 1/
+    - assets/images/AlHekal/northHenya/level 2/
+    - assets/images/AlHekal/northHenya/quba/
+    - assets/images/AlHekal/southHenya/
+    - assets/images/AlHekal/southHenya/level 1/
+    - assets/images/AlHekal/southHenya/level 2/
+    - assets/images/AlHekal/southHenya/quba/
+    - assets/images/Alhesn/
+    - assets/images/Almadkhal/
+    - assets/images/Alsahn/
+    - assets/images/azraa/
+    - assets/images/north hekal/
+    - assets/images/old khoras/
+    - assets/images/outside_der/
+    - assets/images/salat Almaaeda/
+    - assets/images/south hekal/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
@@ -95,3 +118,11 @@ flutter:
           weight: 400
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+
+# using 'flutter Assets Gen' extetion
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/styles/image/
+  filename: app_images.dart
+  field_prefix:
