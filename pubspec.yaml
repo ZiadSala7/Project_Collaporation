@@ -37,6 +37,7 @@ dependencies:
   flutter_localization: ^0.2.0
   flutter_native_splash: ^2.4.0
   flutter_screenutil: ^5.9.0
+  video_player: ^2.8.6
 
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
@@ -65,6 +66,7 @@ flutter:
     - assets/images/
     - lang/ar.json
     - lang/en.json
+<<<<<<< HEAD
     - assets/images/others/
     - assets/images/AlHekal/
     - assets/images/AlHekal/eastHenya/
@@ -88,6 +90,9 @@ flutter:
     - assets/images/outside_der/
     - assets/images/salat Almaaeda/
     - assets/images/south hekal/
+=======
+    - assets/tst.mp4
+>>>>>>> d3ba4778722ecd60d27666b0c5cfe95e7f920ebf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
