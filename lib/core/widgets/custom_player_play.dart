@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:cv_project_team/core/widgets/custom_player_icon.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,8 @@ class CustomPlayerPlay extends StatefulWidget {
 }
 
 class _CustomPlayerPlayState extends State<CustomPlayerPlay> {
+  AudioPlayer audioPlayer = AudioPlayer();
+  bool isPlaying = false;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -37,15 +40,21 @@ class _CustomPlayerPlayState extends State<CustomPlayerPlay> {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon:const CustomPlayerIcon(icon: Icons.forward_10),
+                      icon: const CustomPlayerIcon(icon: Icons.forward_10),
+                    ),
+                    IconButton(
+                      onPressed: () {
+                        
+                      },
+                      icon: isPlaying
+                          ? const CustomPlayerIcon(icon: Icons.pause)
+                          : const CustomPlayerIcon(icon: Icons.play_arrow),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon:const CustomPlayerIcon(icon: Icons.play_arrow)
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon:const CustomPlayerIcon(icon: Icons.replay_10_outlined,),
+                      icon: const CustomPlayerIcon(
+                        icon: Icons.replay_10_outlined,
+                      ),
                     ),
                   ],
                 ),
