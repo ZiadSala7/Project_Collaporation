@@ -4,6 +4,7 @@ import 'package:cv_project_team/core/app/bloc_observer.dart';
 import 'package:cv_project_team/core/language/app_localizations_setup.dart';
 import 'package:cv_project_team/core/services/shared_preferences/shared_pref.dart';
 import 'package:cv_project_team/core/styles/theme/app_theme.dart';
+import 'package:cv_project_team/core/widgets/custom_player_play.dart';
 import 'package:cv_project_team/core/widgets/custom_video_play.dart';
 import 'package:cv_project_team/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
                 AppLocalizationsSetup.localizationsDelegates,
             localeResolutionCallback:
                 AppLocalizationsSetup.localeResolutionCallback,
-            home: const HomeView(),
+            home: const CustomPlayerPlay(),
           );
         }),
       ),
