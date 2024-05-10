@@ -1,9 +1,14 @@
 import 'package:cv_project_team/core/widgets/custom_player_icon.dart';
 import 'package:flutter/material.dart';
 
-class CustomPlayerPlay extends StatelessWidget {
+class CustomPlayerPlay extends StatefulWidget {
   const CustomPlayerPlay({super.key});
 
+  @override
+  State<CustomPlayerPlay> createState() => _CustomPlayerPlayState();
+}
+
+class _CustomPlayerPlayState extends State<CustomPlayerPlay> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
