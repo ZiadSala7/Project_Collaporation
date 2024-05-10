@@ -1,4 +1,4 @@
-import 'package:cv_project_team/core/app/constant.dart';
+ import 'package:cv_project_team/core/app/constant.dart';
 import 'package:cv_project_team/core/common/animations/animate_do.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
