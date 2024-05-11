@@ -31,12 +31,14 @@ dependencies:
   animate_do: ^3.3.4
   cupertino_icons: ^1.0.6
   device_preview: ^1.1.0
+  audioplayers: ^6.0.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5
   flutter_localization: ^0.2.0
   flutter_native_splash: ^2.4.0
   flutter_screenutil: ^5.9.0
+  scroll_snap_list: ^0.9.1
   video_player: ^2.8.6
 
 dev_dependencies:
@@ -63,6 +65,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/audios/
     - assets/images/
     - lang/ar.json
     - lang/en.json
@@ -89,7 +92,6 @@ flutter:
     - assets/images/outside_der/
     - assets/images/salat Almaaeda/
     - assets/images/south hekal/
-    - assets/tst.mp4
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
@@ -120,11 +122,9 @@ flutter:
           weight: 400
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
-
 # using 'flutter Assets Gen' extetion
 flutter_assets:
   assets_path: assets/images/
   output_path: lib/core/styles/image/
   filename: app_images.dart
-  field_prefix:
+  field_prefix: null
