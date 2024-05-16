@@ -6,4 +6,10 @@ class LangKeys {
   static const String about = 'about';
   static const String home = 'home';
   static const String changeLang = 'changeLang';
+  static const String others1 = 'azraaDer';
+  static const String others2 = 'whiteDer';
+  static const String others3 = 'azraaDranka';
+  static const String others4 = 'maryGerges';
+  static const String others5 = 'mahraqDer';
+  static const String others6 = 'alShohadaa';
 }
