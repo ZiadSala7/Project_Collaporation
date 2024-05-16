@@ -201,6 +201,7 @@ class AppImages {
   static const String imagesOldKhorasKh7 = "assets/images/old khoras/kh7.jpg";
   static const String imagesOldKhorasKh8 = "assets/images/old khoras/kh8.jpg";
   static const String imagesOldKhorasKh9 = "assets/images/old khoras/kh9.jpg";
+  // others images
   static const String imagesOthersAzraa2DrankaDer = "assets/images/others/azraa2_dranka_der.jpg";
   static const String imagesOthersAzraaDrankaDer = "assets/images/others/azraa_dranka_der.jpg";
   static const String imagesOthersMargergesDer = "assets/images/others/margerges_der.jpg";
@@ -208,6 +209,7 @@ class AppImages {
   static const String imagesOthersShohadaa2Der = "assets/images/others/shohadaa2_der.jpg";
   static const String imagesOthersShohadaaDer = "assets/images/others/shohadaa_der.jpg";
   static const String imagesOthersWhiteDer = "assets/images/others/white_der.jpg";
+  
   static const String imagesOutsideDerOut1 = "assets/images/outside_der/out1.jpg";
   static const String imagesOutsideDerOut2 = "assets/images/outside_der/out2.jpg";
   static const String imagesOutsideDerOut3 = "assets/images/outside_der/out3.jpg";
