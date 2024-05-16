@@ -1,136 +1,47 @@
-import 'package:audioplayers/audioplayers.dart';
-import 'package:cv_project_team/core/widgets/custom_player_icon.dart';
+import 'package:cv_project_team/core/app/audio_cubit/audio_cubit.dart';
+import 'package:cv_project_team/core/app/audio_cubit/audio_state.dart';
+import 'package:cv_project_team/core/widgets/custom_player_play_body.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomPlayerPlay extends StatefulWidget {
+class CustomPlayerPlay extends StatelessWidget {
   const CustomPlayerPlay({super.key, required this.audioPath});
   final String audioPath;
-  @override
-  State<CustomPlayerPlay> createState() => _CustomPlayerPlayState();
-}
-
-class _CustomPlayerPlayState extends State<CustomPlayerPlay> {
-  AudioPlayer player = AudioPlayer();
-  bool isPlaying = false;
-  bool isLoading = false;
-  Duration currentPosition = const Duration();
-  Duration lengthDuration = const Duration();
-  Future<void> playAudio() async {
-    isLoading = true;
-    setState(() {});
-    await player.play(AssetSource(widget.audioPath));
-    isLoading = false;
-    setState(() {});
-  }
-
-  Future<void> pausePlayer() async {
-    isLoading = true;
-    setState(() {});
-    await player.pause();
-    isLoading = false;
-    setState(() {});
-  }
-
-  setUpAudio() {
-    player.onPositionChanged.listen((event) {
-      currentPosition = event;
-      setState(() {});
-    });
-    player.onDurationChanged.listen((event) {
-      lengthDuration = event;
-      setState(() {});
-    });
-  }
-
-  Future<void> stopAudio() async {
-    isLoading = true;
-    setState(() {});
-    await player.stop();
-    isLoading = false;
-    setState(() {});
-  }
-
-  seekTo(int sec) {
-    player.seek(Duration(seconds: sec));
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    setUpAudio();
-  }
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        height: 100.h,
-        decoration: BoxDecoration(
-          color: Colors.blueGrey,
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Slider(
-              activeColor: Colors.white,
-              inactiveColor: Colors.black,
-              value: currentPosition.inSeconds.toDouble(),
-              min: 0,
-              max: lengthDuration.inSeconds.toDouble(),
-              onChanged: (value) {
-                setState(() {
-                  seekTo(value.toInt());
-                });
+    return SafeArea(
+      child: BlocBuilder<AudioCubit, AudioState>(builder: (context, state) {
+        return GestureDetector(
+          onTap: () {
+            BlocProvider.of<AudioCubit>(context)
+                .setCurrentAudio(path: audioPath);
+            BlocProvider.of<AudioCubit>(context).playAudio(audioPath);
+            showModalBottomSheet(
+              context: context,
+              useSafeArea: true,
+              isScrollControlled: true, // Set to true
+              builder: (context) {
+                return CustomPlayerPlayBody(
+                  audioPath: audioPath,
+                );
               },
+            );
+          },
+          child: Container(
+            margin: const EdgeInsets.all(8),
+            // color:AppColors.secondryColor,
+            child: ListTile(
+              title: const Text("Audio"),
+              leading: CircleAvatar(
+                  radius: 20.sp,
+                  //TODO:custonPlayIcon
+                  child: Icon(Icons.play_arrow_rounded)),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                IconButton(
-                  onPressed: () {
-                    if (currentPosition.inSeconds > 10) {
-                      seekTo(currentPosition.inSeconds - 10);
-                    } else {
-                      seekTo(0);
-                    }
-                    setState(() {});
-                  },
-                  icon: const CustomPlayerIcon(icon: Icons.forward_10),
-                ),
-                IconButton(
-                  onPressed: () {
-                    isPlaying = !isPlaying;
-                    (isPlaying) ? playAudio() : pausePlayer();
-                    setState(() {});
-                  },
-                  icon: isLoading
-                      ? const CircularProgressIndicator()
-                      : isPlaying
-                          ? const CustomPlayerIcon(icon: Icons.pause)
-                          : const CustomPlayerIcon(icon: Icons.play_arrow),
-                ),
-                IconButton(
-                  onPressed: () {
-                    if (currentPosition.inSeconds + 10 <
-                        lengthDuration.inSeconds) {
-                      seekTo(currentPosition.inSeconds + 10);
-                    } else {
-                      seekTo(lengthDuration.inSeconds);
-                    }
-                    setState(() {});
-                  },
-                  icon: const CustomPlayerIcon(
-                    icon: Icons.replay_10_outlined,
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
+          ),
+        );
+      }),
     );
   }
 }
