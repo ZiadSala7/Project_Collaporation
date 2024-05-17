@@ -5,6 +5,7 @@ class LangKeys {
   static const String settings = 'settings';
   static const String about = 'about';
   static const String home = 'home';
+  static const String redDer = 'redDer';
   static const String changeLang = 'changeLang';
   static const String azraaDer = 'others1';
   static const String whiteDer = 'others2';
