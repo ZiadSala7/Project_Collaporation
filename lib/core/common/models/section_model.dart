@@ -1,3 +1,5 @@
+import 'package:cv_project_team/core/styles/image/app_images.dart';
+
 class SectionCardModels {
   SectionCardModels({
     required this.id,
@@ -49,7 +51,7 @@ class SectionCardModels {
     section.copyWith(id: '5', name: 'Temple', imageUrl: _imagesUrls[4],
     description: 'Eastern Half Dome: This dome included the third view of his pictures in four different phases.The first stage: represents the image of the ascension of Christ, and this icon is considered the oldest icon of the ascension of the Lord Christ in the world.North half dome: there is a depiction representing the nursing virgin and the prophets of the Old Testament and this icon In the fresco she represents the Virgin while she is sitting breastfeeding the baby Jesus.South Half DomeThere is a drawing representing Christ sitting on the throne and pointing with his hands at the world of the beginning and the end and around him the evangelicals Four, fathers, saints and patriarchs.'
     ),
-    section.copyWith(id: '6', name: 'East Hulk Room', imageUrl: _imagesUrls[5],
+    section.copyWith(id: '6', name: 'north Hulk Room', imageUrl: _imagesUrls[5],
     description: 'Like the Southern corridor in its use in ceremonial sessions and in the weather of JerusalemThere are beautiful icons, including a wonderful icon of Christ in a different way, which is with a mustache without a chin and pointing To the scientist of blessing and holding the Bible and 2 of the angels in the position of the hall or intercession and they are the owner Gabriel and Michael and called " icon of intercession',
     ),
     section.copyWith(id: '7', name: 'The Church', imageUrl: _imagesUrls[6],
@@ -62,21 +64,26 @@ class SectionCardModels {
         id: '9', name: ' Church of Our Lady', imageUrl: _imagesUrls[8],
         description: 'It dates back to the 18th century, and is found in the southwestern part, and it is in the Khawares system, its area is small in structure and Khors only, and the reason for calling it the bird\'s milk is because the people who come and pray and are blessed from it and ask Something impossible he was achieving',
         ),
-    section.copyWith(
-      id: '10',
-      name: 'Well',
-      imageUrl: _imagesUrls[9],
-      description: 'It was found in the nave on the left of the visitor after the southern entrance, about 10 meters deep, which was the source The only drinking water monks and visitors throughout the ages'
-    ),
   ];
 }
 
 final section = SectionCardModels(
   id: '1',
-  name: ' the Entrance',
+  name: 'the Entrance',
   imageUrl: _imagesUrls[0],
   description:
       'A small door opening leads to a darkener with a drum or a basin covered with glass "washing basin" and was usually the monastery When visitors came to the church, they would greet them and wash their feet.The entrance with stones, which is one of the oldest parts of the monastery 500 m and the stones were from the Pharaonic city that was before The monastery, and when they took it, they decorated floral motifs with the cantas flower, and these stones are preserved for Allen with the inscriptions Ancient Pharaonic ',
 );
 
-const _imagesUrls = [];
+const _imagesUrls = [
+  AppImages.imagesAlmadkhalM11,
+  AppImages.imagesAlhesnH19,
+  AppImages.imagesSalatAlmaaedaMaaeda7,
+  AppImages.imagesSouthHekalHkl8,
+  AppImages.imagesAlHekalPh4,
+  AppImages.imagesNorthHekalNkl12,
+  AppImages.imagesOldKhorasKh18,
+  AppImages.imagesAlsahnS22,
+  AppImages.imagesAzraaAz2,
+
+];

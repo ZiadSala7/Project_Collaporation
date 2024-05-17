@@ -13,4 +13,6 @@ class LangKeys {
   static const String maryGerges = 'others4';
   static const String mahraqDer = 'others5';
   static const String alShohadaa = 'others6';
+
+  static const String theEntrance = 'theEntrance';
 }
