@@ -1,6 +1,7 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
+import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:flutter/material.dart';
-
 
 class PageIndicators extends StatelessWidget {
   const PageIndicators({
@@ -49,8 +50,10 @@ class PageViewIndicators extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final index = pageIndex;
+    final totalWidth = (length - 1) * 16 + length * 6;
     return SizedBox(
       height: 12,
+      width: totalWidth.toDouble(),
       child: Stack(
         clipBehavior: Clip.none,
         alignment: Alignment.center,
@@ -65,7 +68,18 @@ class PageViewIndicators extends StatelessWidget {
             ],
           ),
           Positioned(
-            left: (16 * index) + (6 * index),
+            left: AppLocalizations.of(context)!
+                        .translate(LangKeys.langCode)
+                        .toString() ==
+                    'English'
+                ? (16 * index) + (6 * index)
+                : null,
+            right: AppLocalizations.of(context)!
+                        .translate(LangKeys.langCode)
+                        .toString() ==
+                    'العربية'
+                ? (16 * index) + (6 * index)
+                : null,
             child: const _BorderDot(),
           )
         ],

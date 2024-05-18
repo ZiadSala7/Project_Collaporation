@@ -36,7 +36,7 @@ class _SeclectSectionScreenState extends State<SeclectSectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown,
+      backgroundColor: const Color.fromARGB(255, 233, 101, 61),
       body: SafeArea(
         child: Column(
           children: [
