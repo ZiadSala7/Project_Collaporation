@@ -21,8 +21,8 @@ class BackgroundSectionCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.brown,
             borderRadius: BorderRadius.all(Radius.circular(12.sp)),
-            boxShadow: [
-              BoxShadow(
+            boxShadow:const [
+             BoxShadow(
                 color: Colors.brown,
                 blurRadius: 12,
                 offset: Offset(-7, 7),
@@ -32,8 +32,9 @@ class BackgroundSectionCard extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.all(16.sp),
+              padding: EdgeInsets.all(8.sp),
               child: Text(
+                style: const TextStyle(color: Colors.white),
                 AppLocalizations.of(context)!
                     .translate(section.description)
                     .toString(),
