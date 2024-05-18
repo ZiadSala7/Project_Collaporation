@@ -2,6 +2,7 @@ import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/styles/snaping%20effect/snap_model.dart';
+import 'package:cv_project_team/features/select_section/persentation/view/selcet_section_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
@@ -12,7 +13,10 @@ List<SnapImage> lst(BuildContext context) {
         imagePath: AppImages.imagesOutsideDerOut1,
         imageName:
             AppLocalizations.of(context)!.translate(LangKeys.redDer).toString(),
-        icon:  Icon(Icons.add_task_rounded,color: Colors.green[1000],),
+        icon: Icon(
+          Icons.add_task_rounded,
+          color: Colors.green[1000],
+        ),
         isLock: false),
     SnapImage(
         imagePath: AppImages.imagesOthersAzraa2DrankaDer,
@@ -83,43 +87,54 @@ class CustomSnappingEffect extends StatelessWidget {
 Widget _builItem(BuildContext context, int index) {
   List<SnapImage> imgs = lst(context);
   SnapImage snapImage = imgs[index];
-  return Container(
-    color: Colors.black,
-    child: Card(
-      elevation: 1.75.sp,
-      child: ClipRRect(
-        borderRadius: const BorderRadius.all(Radius.circular(15)),
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              snapImage.imagePath,
-              fit: BoxFit.fill,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Text(
-                    snapImage.imageName,
-                    style: TextStyle(
-                      decoration: snapImage.isLock
-                          ? TextDecoration.lineThrough
-                          : TextDecoration.none,
-                      color:  Colors.black,
-                      fontSize: 22,
-                      fontWeight: FontWeight.w500,
+  return GestureDetector(
+    onTap: () {
+      if (!snapImage.isLock) {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const SelectSectionScreen(),
+            ));
+      }
+    },
+    child: Container(
+      color: Colors.black,
+      child: Card(
+        elevation: 1.75.sp,
+        child: ClipRRect(
+          borderRadius: const BorderRadius.all(Radius.circular(15)),
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                snapImage.imagePath,
+                fit: BoxFit.fill,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      snapImage.imageName,
+                      style: TextStyle(
+                        decoration: snapImage.isLock
+                            ? TextDecoration.lineThrough
+                            : TextDecoration.none,
+                        color: Colors.black,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
-                ),
-                 SizedBox(
-                  height: 12.h,
-                ),
-                snapImage.icon,
-              ],
-            )
-          ],
+                  SizedBox(
+                    height: 12.h,
+                  ),
+                  snapImage.icon,
+                ],
+              )
+            ],
+          ),
         ),
       ),
     ),
