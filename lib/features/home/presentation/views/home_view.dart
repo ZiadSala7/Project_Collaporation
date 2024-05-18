@@ -5,7 +5,6 @@ import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/widgets/custom_drawer.dart';
 import 'package:cv_project_team/core/widgets/custom_snapping_effect.dart';
-import 'package:cv_project_team/features/home/presentation/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
