@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,11 +20,11 @@ class BackgroundSectionCard extends StatelessWidget {
         transform: Matrix4.translationValues(0, 80 * translation, 0),
         child: DecoratedBox(
           decoration: BoxDecoration(
-            color: Colors.brown,
+            color: AppColors.mainColor,
             borderRadius: BorderRadius.all(Radius.circular(12.sp)),
             boxShadow:const [
              BoxShadow(
-                color: Colors.brown,
+                color: AppColors.mainColor,
                 blurRadius: 12,
                 offset: Offset(-7, 7),
               ),

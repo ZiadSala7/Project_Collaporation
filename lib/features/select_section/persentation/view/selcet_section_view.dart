@@ -1,3 +1,4 @@
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/page_indicators.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/select_section_view_body.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +37,7 @@ class _SelectSectionScreenState extends State<SelectSectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 233, 101, 61),
+      backgroundColor: AppColors.backgroundOfSection,
       body: SafeArea(
         child: Column(
           children: [
