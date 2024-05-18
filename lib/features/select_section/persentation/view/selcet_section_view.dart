@@ -36,12 +36,17 @@ class _SeclectSectionScreenState extends State<SeclectSectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.brown,
       body: SafeArea(
         child: Column(
           children: [
             SizedBox(height: 24.h),
-            Text("SELECT A Section", style: TextStyle(fontSize: 20.sp)),
+            Text("SELECT A Section",
+                style: TextStyle(
+                  fontSize: 20.sp,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                )),
             SizedBox(
               height: 32.h,
             ),
