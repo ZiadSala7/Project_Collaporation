@@ -1,3 +1,5 @@
+import 'package:cv_project_team/core/common/models/section_model.dart';
+import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -5,10 +7,10 @@ class BackgroundSectionCard extends StatelessWidget {
   const BackgroundSectionCard({
     required this.translation,
     super.key,
-    required this.descriptionSection,
+    required this.section,
   });
 
-  final String descriptionSection;
+  final SectionCardModels section;
   final double translation;
 
   @override
@@ -31,7 +33,11 @@ class BackgroundSectionCard extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Padding(
               padding: EdgeInsets.all(16.sp),
-              child: Text(descriptionSection),
+              child: Text(
+                AppLocalizations.of(context)!
+                    .translate(section.description)
+                    .toString(),
+              ),
             ),
           ),
         ));

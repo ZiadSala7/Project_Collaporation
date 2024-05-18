@@ -24,7 +24,7 @@ class LangKeys {
   static const String descriptionTableHall = 'descriptionTableHall';
 
   static const String southTempleRoom = 'southTempleRoom';
-  static const String descriptionSouthTempleRoom ='descriptionSouthTempleRoom';
+  static const String descriptionSouthTempleRoom = 'descriptionSouthTempleRoom';
 
   static const String temple = 'temple';
   static const String descriptionTemple = 'descriptionTemple';
@@ -38,6 +38,6 @@ class LangKeys {
   static const String dish = 'dish';
   static const String descriptionDish = 'descriptionDish';
 
-  static const String madonnaCurch = 'madonnaChurch';
-  static const String descriptionMadonnaCurch = 'descriptionMadonnaCurch';
- }
+  static const String maddonnaCurch = 'maddonnaChurch';
+  static const String descriptionMadonnaCurch = 'descriptionMadonnaChurch';
+}

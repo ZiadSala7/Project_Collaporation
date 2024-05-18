@@ -29,7 +29,6 @@ class SelectSectionViewBody extends StatelessWidget {
       builder: (_, page, __) => ValueListenableBuilder(
         valueListenable: sectionSelectorNotifier,
         builder: (_, selected, __) => PageView.builder(
-          reverse: true,
           clipBehavior: Clip.none,
           itemCount: SectionCardModels.fakeValues.length,
           controller: controller,

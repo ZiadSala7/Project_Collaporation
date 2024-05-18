@@ -46,7 +46,7 @@ class SectionCard extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 180),
               child: BackgroundSectionCard(
                 translation: value,
-                descriptionSection: section.description,
+                section: section,
               ),
             ),
           ),

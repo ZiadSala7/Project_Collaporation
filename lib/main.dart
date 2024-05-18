@@ -7,6 +7,7 @@ import 'package:cv_project_team/core/services/shared_preferences/shared_pref.dar
 import 'package:cv_project_team/core/styles/theme/app_theme.dart';
 import 'package:cv_project_team/features/home/presentation/views/home_view.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/selcet_section_view.dart';
+import 'package:cv_project_team/features/select_section/persentation/widgets/select_section_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
