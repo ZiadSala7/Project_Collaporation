@@ -33,7 +33,8 @@ class SectionCardModels {
         id: '2',
         name: LangKeys.theFort,
         imageUrl: _imagesUrls[1],
-        description: LangKeys.descriptionTheFort),
+        description: LangKeys.descriptionTheFort
+        ),
     section.copyWith(
       id: '3',
       name: LangKeys.tableHall,

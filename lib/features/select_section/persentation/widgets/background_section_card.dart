@@ -16,9 +16,9 @@ class BackgroundSectionCard extends StatelessWidget {
     return Transform(
         transform: Matrix4.translationValues(0, 80 * translation, 0),
         child: DecoratedBox(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             color: Colors.brown,
-            borderRadius: BorderRadius.all(Radius.circular(12)),
+            borderRadius: BorderRadius.all(Radius.circular(12.sp)),
             boxShadow: [
               BoxShadow(
                 color: Colors.brown,
