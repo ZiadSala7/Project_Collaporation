@@ -15,4 +15,29 @@ class LangKeys {
   static const String alShohadaa = 'others6';
 
   static const String theEntrance = 'theEntrance';
-}
+  static const String descriptionTheEntrance = 'descriptionTheEntrance';
+
+  static const String theFort = 'theFort';
+  static const String descriptionTheFort = 'descriptionTheFort';
+
+  static const String tableHall = 'tableHall';
+  static const String descriptionTableHall = 'descriptionTableHall';
+
+  static const String southTempleRoom = 'southTempleRoom';
+  static const String descriptionSouthTempleRoom ='descriptionSouthTempleRoom';
+
+  static const String temple = 'temple';
+  static const String descriptionTemple = 'descriptionTemple';
+
+  static const String northHulkRoom = 'northHulkRoom';
+  static const String descriptionNorthHulkRoom = 'descriptionNorthHulkRoom';
+
+  static const String theChurch = 'theChurch';
+  static const String descriptionTheChurch = 'descriptionTheChurch';
+
+  static const String dish = 'dish';
+  static const String descriptionDish = 'descriptionDish';
+
+  static const String madonnaCurch = 'madonnaChurch';
+  static const String descriptionMadonnaCurch = 'descriptionMadonnaCurch';
+ }
