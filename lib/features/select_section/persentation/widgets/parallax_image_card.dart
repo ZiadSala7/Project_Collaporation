@@ -11,7 +11,7 @@ class ParallaxImageCard extends StatelessWidget {
 
   BoxDecoration get _perallaxUrlImageDecoration => BoxDecoration(
         borderRadius: const BorderRadius.all(Radius.circular(12)),
-        color: Colors.blueAccent,
+        color: Colors.grey,
         boxShadow: const [
           BoxShadow(
             color: Colors.black26,
@@ -30,7 +30,7 @@ class ParallaxImageCard extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(12.r)),
         gradient: const RadialGradient(
           radius: 2,
-          colors: [Colors.transparent, Colors.white],
+          colors: [Colors.transparent, Colors.red],
         ),
       );
 
