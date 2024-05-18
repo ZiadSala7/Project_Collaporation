@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ShimmerArrows extends StatefulWidget {
   const ShimmerArrows({super.key});
 
@@ -45,9 +44,27 @@ class _ShimmerArrowsState extends State<ShimmerArrows>
       },
       child: const Column(
         children: [
-          Align(heightFactor: .4, child: Icon(Icons.keyboard_arrow_up)),
-          Align(heightFactor: .4, child: Icon(Icons.keyboard_arrow_up)),
-          Align(heightFactor: .4, child: Icon(Icons.keyboard_arrow_up)),
+          Align(
+              heightFactor: .4,
+              child: Icon(
+                Icons.keyboard_arrow_up,
+                color: Colors.white,
+                size: 32,
+              )),
+          Align(
+              heightFactor: .4,
+              child: Icon(
+                Icons.keyboard_arrow_up,
+                color: Colors.white,
+                size: 32,
+              )),
+          Align(
+              heightFactor: .4,
+              child: Icon(
+                Icons.keyboard_arrow_up,
+                color: Colors.white,
+                size: 32,
+              )),
         ],
       ),
     );
