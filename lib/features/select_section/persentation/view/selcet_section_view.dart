@@ -3,14 +3,14 @@ import 'package:cv_project_team/features/select_section/persentation/widgets/sel
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class SeclectSectionScreen extends StatefulWidget {
-  const SeclectSectionScreen({super.key});
+class SelectSectionScreen extends StatefulWidget {
+  const SelectSectionScreen({super.key});
 
   @override
-  State<SeclectSectionScreen> createState() => _SeclectSectionScreenState();
+  State<SelectSectionScreen> createState() => _SelectSectionScreenState();
 }
 
-class _SeclectSectionScreenState extends State<SeclectSectionScreen> {
+class _SelectSectionScreenState extends State<SelectSectionScreen> {
   final controller = PageController(viewportFraction: 0.8);
   final ValueNotifier<double> pageNotifier = ValueNotifier(0);
   final ValueNotifier<int> sectionSelectorNotifier = ValueNotifier(-1);

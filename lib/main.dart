@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                 AppLocalizationsSetup.localizationsDelegates,
             localeResolutionCallback:
                 AppLocalizationsSetup.localeResolutionCallback,
-            home: const SeclectSectionScreen(),
+            home: const SelectSectionScreen(),
           );
         }),
       ),
