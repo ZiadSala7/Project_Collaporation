@@ -2,6 +2,7 @@ import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/styles/snaping%20effect/snap_model.dart';
+import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/selcet_section_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,7 +16,8 @@ List<SnapImage> lst(BuildContext context) {
             AppLocalizations.of(context)!.translate(LangKeys.redDer).toString(),
         icon: Icon(
           Icons.add_task_rounded,
-          color: Colors.green[1000],
+          color: Colors.green,
+          size: 25.sp,
         ),
         isLock: false),
     SnapImage(
@@ -66,7 +68,7 @@ List<SnapImage> lst(BuildContext context) {
 
 class CustomSnappingEffect extends StatelessWidget {
   const CustomSnappingEffect({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -76,9 +78,10 @@ class CustomSnappingEffect extends StatelessWidget {
         scrollDirection: Axis.vertical,
         itemBuilder: _builItem,
         itemCount: lst(context).length,
-        itemSize: 300.sp,
+        itemSize: 320.sp,
         onItemFocus: (index) {},
         dynamicItemSize: true,
+        
       ),
     );
   }
@@ -106,10 +109,7 @@ Widget _builItem(BuildContext context, int index) {
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                snapImage.imagePath,
-                fit: BoxFit.fill,
-              ),
+              CustomAppImage(imgPath: snapImage.imagePath),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -122,7 +122,7 @@ Widget _builItem(BuildContext context, int index) {
                             ? TextDecoration.lineThrough
                             : TextDecoration.none,
                         color: Colors.black,
-                        fontSize: 22,
+                        fontSize: 24,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
