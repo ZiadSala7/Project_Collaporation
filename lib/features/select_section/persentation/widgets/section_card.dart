@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:cv_project_team/core/common/models/section_model.dart';
-import 'package:cv_project_team/features/home/presentation/views/deatails.dart';
+import 'package:cv_project_team/features/home/presentation/views/details_view.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/animated_shimmer_arrow.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/background_section_card.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/parallax_image_card.dart';
@@ -73,7 +73,7 @@ class SectionCard extends StatelessWidget {
                       animation: animation,
                       builder: (context, _) => const Material(
                         type: MaterialType.transparency,
-                        child: Deatails(),
+                        child: DetailsView(),
                       ),
                     );
                   },

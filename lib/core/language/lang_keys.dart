@@ -40,4 +40,9 @@ class LangKeys {
 
   static const String maddonnaCurch = 'maddonnaChurch';
   static const String descriptionMadonnaCurch = 'descriptionMadonnaChurch';
+
+  static const String textAndImages = 'textAndImages';
+  static const String audios = 'audios';
+  static const String videos = 'videos';
+
 }
