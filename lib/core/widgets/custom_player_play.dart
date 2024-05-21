@@ -36,8 +36,7 @@ class CustomPlayerPlay extends StatelessWidget {
               title: const Text("Audio"),
               leading: CircleAvatar(
                   radius: 20.sp,
-                  //TODO:custonPlayIcon
-                  child: Icon(Icons.play_arrow_rounded)),
+                  child: const Icon(Icons.play_arrow_rounded)),
             ),
           ),
         );

@@ -14,7 +14,6 @@ class _CustomVideoPlayerState extends State<CustomVideoPlayer> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller = VideoPlayerController.asset(widget.pathVideo)
       ..initialize().then((value) {

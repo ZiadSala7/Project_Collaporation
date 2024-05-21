@@ -29,8 +29,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   animate_do: ^3.3.4
-  cupertino_icons: ^1.0.6
   audioplayers: ^6.0.0
+  cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5
@@ -38,6 +38,7 @@ dependencies:
   flutter_native_splash: ^2.4.0
   flutter_screenutil: ^5.9.0
   scroll_snap_list: ^0.9.1
+  shared_preferences: ^2.2.3
   video_player: ^2.8.6
 
 dev_dependencies:
