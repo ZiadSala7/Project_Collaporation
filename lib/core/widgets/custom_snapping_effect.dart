@@ -68,7 +68,7 @@ List<SnapImage> lst(BuildContext context) {
 
 class CustomSnappingEffect extends StatelessWidget {
   const CustomSnappingEffect({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -81,7 +81,6 @@ class CustomSnappingEffect extends StatelessWidget {
         itemSize: 320.sp,
         onItemFocus: (index) {},
         dynamicItemSize: true,
-        
       ),
     );
   }
