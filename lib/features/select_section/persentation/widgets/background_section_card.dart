@@ -22,8 +22,8 @@ class BackgroundSectionCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: AppColors.mainColor,
             borderRadius: BorderRadius.all(Radius.circular(12.sp)),
-            boxShadow:const [
-             BoxShadow(
+            boxShadow: const [
+              BoxShadow(
                 color: AppColors.mainColor,
                 blurRadius: 12,
                 offset: Offset(-7, 7),

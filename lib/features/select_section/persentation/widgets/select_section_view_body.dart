@@ -15,7 +15,7 @@ class SelectSectionViewBody extends StatelessWidget {
   final ValueNotifier<int> sectionSelectorNotifier;
   final PageController controller;
 
-  double _getOffsetX(double percent) => percent.isNegative ? 30.0 : -30.0;
+  double _getOffsetX(double percent) => percent.isNegative ? 40.0 : -40.0;
 
   Matrix4 _getOutTranslate(double percent, int selected, int index) {
     final x = selected != index && selected != -1 ? _getOffsetX(percent) : 0.0;
@@ -34,12 +34,18 @@ class SelectSectionViewBody extends StatelessWidget {
           controller: controller,
           itemBuilder: (_, index) {
             final percent = page - index;
+
             final isSelected = selected == index;
             final section = SectionCardModels.fakeValues[index];
             return AnimatedContainer(
               duration: kThemeAnimationDuration,
               curve: Curves.fastOutSlowIn,
-              transform: _getOutTranslate(percent, selected, index),
+              transform: _getOutTranslate(
+                  Directionality.of(context) == TextDirection.rtl
+                      ? -percent
+                      : percent,
+                  selected,
+                  index),
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
