@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -29,7 +30,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
       // backgroundColor: mobileBackgroundColor,
       bottomNavigationBar: CupertinoTabBar(
         height: 55.h,
-        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: AppColors.appBlack,
         onTap: (index) {
           _pageController.jumpToPage(index);
           setState(() {
@@ -41,7 +42,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             icon: Icon(
               Icons.image_rounded,
               size: 30.sp,
-              color: pageIndex == 0 ? Colors.amber : Colors.white,
+              color: pageIndex == 0 ? Colors.amberAccent : Colors.white,
             ),
             label: local!.translate(LangKeys.textAndImages).toString(),
           ),
@@ -53,14 +54,14 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             ),
             label: local.translate(LangKeys.audios).toString(),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.video_collection_rounded,
-              size: 27.sp,
-              color: pageIndex == 2 ? Colors.amber : Colors.white,
-            ),
-            label: local.translate(LangKeys.videos).toString(),
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(
+          //     Icons.video_collection_rounded,
+          //     size: 27.sp,
+          //     color: pageIndex == 2 ? Colors.amber : Colors.white,
+          //   ),
+          //   label: local.translate(LangKeys.videos).toString(),
+          // ),
         ],
       ),
       body: PageView(
@@ -81,11 +82,11 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
                     const CustomAppImage(
                         imgPath: AppImages.imagesOutsideDerOut1),
                     SizedBox(height: 20.h),
-                    const CustomAppImage(
-                        imgPath: AppImages.imagesAlhesnH22),
+                    const CustomAppImage(imgPath: AppImages.imagesAlhesnH22),
                     SizedBox(height: 20.h),
                     const CustomAppImage(
-                        imgPath: AppImages.imagesAlHekalEastHenyaLevel1Elevel11),
+                        imgPath:
+                            AppImages.imagesAlHekalEastHenyaLevel1Elevel11),
                     SizedBox(height: 20.h),
                   ],
                 ),
