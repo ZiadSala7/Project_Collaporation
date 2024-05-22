@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/app/constant.dart';
 import 'package:cv_project_team/core/common/animations/animate_do.dart';
+import 'package:cv_project_team/core/common/widgets/custom_linear_button.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
@@ -16,6 +17,40 @@ class SelectSectionScreen extends StatefulWidget {
 }
 
 class _SelectSectionScreenState extends State<SelectSectionScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CustomLinearButton(
+              height: 50.h,
+              width: 100.h,
+              onPressed: () {},
+              child: Text(
+                AppLocalizations.of(context)!
+                    .translate(LangKeys.guideVideo)
+                    .toString(),
+              ),
+            ),
+            CustomLinearButton(onPressed: () {}, child: Text('Video')),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class DetailsScreen extends StatefulWidget {
+  const DetailsScreen({super.key});
+
+  @override
+  State<DetailsScreen> createState() => _DetailsScreenState();
+}
+
+class _DetailsScreenState extends State<DetailsScreen> {
   final controller = PageController(viewportFraction: 0.8);
   final ValueNotifier<double> pageNotifier = ValueNotifier(0);
   final ValueNotifier<int> sectionSelectorNotifier = ValueNotifier(-1);
@@ -56,7 +91,6 @@ class _SelectSectionScreenState extends State<SelectSectionScreen> {
                     fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
                     color: AppColors.appBlack,
-                    
                   )),
             ),
             SizedBox(
