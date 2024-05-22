@@ -1,3 +1,4 @@
+import 'package:cv_project_team/features/about/presentation/widgets/turath_email_link.dart';
 import 'package:flutter/material.dart';
 
 class AboutViewBody extends StatelessWidget {
@@ -5,6 +6,10 @@ class AboutViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ListView(
+      children: const [
+        TurathEmailLink(),
+      ],
+    );
   }
 }
