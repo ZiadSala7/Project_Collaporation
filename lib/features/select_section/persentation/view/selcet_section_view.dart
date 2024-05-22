@@ -1,3 +1,7 @@
+import 'package:cv_project_team/core/app/constant.dart';
+import 'package:cv_project_team/core/common/animations/animate_do.dart';
+import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/page_indicators.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/select_section_view_body.dart';
@@ -37,17 +41,24 @@ class _SelectSectionScreenState extends State<SelectSectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundOfSection,
+      backgroundColor: AppColors.mainColor,
       body: SafeArea(
         child: Column(
           children: [
             SizedBox(height: 24.h),
-            Text("SELECT A Section",
-                style: TextStyle(
-                  fontSize: 20.sp,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                )),
+            CustomFadeInDown(
+              duration: animationDuration,
+              child: Text(
+                  AppLocalizations.of(context)!
+                      .translate(LangKeys.selectSection)
+                      .toString(),
+                  style: TextStyle(
+                    fontSize: 20.sp,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.appBlack,
+                    
+                  )),
+            ),
             SizedBox(
               height: 32.h,
             ),

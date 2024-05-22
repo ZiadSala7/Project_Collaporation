@@ -26,7 +26,7 @@ class HomeView extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .displayMedium!
-                  .copyWith(color: Colors.white),
+                  .copyWith(color:AppColors.appBlack),
             ),
           ),
           titleSpacing: 2,

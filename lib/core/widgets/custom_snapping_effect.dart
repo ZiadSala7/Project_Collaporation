@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/styles/snaping%20effect/snap_model.dart';
 import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
@@ -100,7 +101,7 @@ Widget _builItem(BuildContext context, int index) {
       }
     },
     child: Container(
-      color: Colors.black,
+      color: AppColors.appBlack,
       child: Card(
         elevation: 1.75.sp,
         child: ClipRRect(

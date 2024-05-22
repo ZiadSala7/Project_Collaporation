@@ -20,11 +20,11 @@ class BackgroundSectionCard extends StatelessWidget {
         transform: Matrix4.translationValues(0, 80 * translation, 0),
         child: DecoratedBox(
           decoration: BoxDecoration(
-            color: AppColors.mainColor,
+            color: AppColors.appGrey2,
             borderRadius: BorderRadius.all(Radius.circular(12.sp)),
             boxShadow: const [
               BoxShadow(
-                color: AppColors.mainColor,
+                color: AppColors.appGrey2,
                 blurRadius: 12,
                 offset: Offset(-7, 7),
               ),
@@ -35,10 +35,12 @@ class BackgroundSectionCard extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(8.sp),
               child: Text(
-                style: const TextStyle(color: Colors.white),
+                style: const TextStyle(color: AppColors.appBlack),
                 AppLocalizations.of(context)!
                     .translate(section.description)
                     .toString(),
+                maxLines: 5,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
           ),
