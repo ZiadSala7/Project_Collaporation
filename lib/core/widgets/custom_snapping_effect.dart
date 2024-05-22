@@ -3,6 +3,7 @@ import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/styles/snaping%20effect/snap_model.dart';
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/selcet_section_view.dart';
 import 'package:flutter/material.dart';
@@ -115,17 +116,12 @@ Widget _builItem(BuildContext context, int index) {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      snapImage.imageName,
-                      style: TextStyle(
-                        decoration: snapImage.isLock
-                            ? TextDecoration.lineThrough
-                            : TextDecoration.none,
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
+                    child: Text(snapImage.imageName,
+                        style: Styless.textStyle24.copyWith(
+                          decoration: snapImage.isLock
+                              ? TextDecoration.lineThrough
+                              : TextDecoration.none,
+                        )),
                   ),
                   SizedBox(
                     height: 12.h,

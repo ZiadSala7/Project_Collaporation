@@ -1,6 +1,7 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -35,7 +36,7 @@ class BackgroundSectionCard extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(8.sp),
               child: Text(
-                style: const TextStyle(color: AppColors.appBlack),
+                style: Styless.textStyle20,
                 AppLocalizations.of(context)!
                     .translate(section.description)
                     .toString(),

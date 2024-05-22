@@ -4,6 +4,7 @@ import 'package:cv_project_team/core/common/widgets/custom_linear_button.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/page_indicators.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/select_section_view_body.dart';
 import 'package:flutter/material.dart';

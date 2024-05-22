@@ -1,5 +1,5 @@
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TurathEmailLink extends StatelessWidget {
@@ -28,14 +28,16 @@ class TurathEmailLink extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: InkWell(
-          onTap: launchEmail,
-          child: Text(
-            "torath831@gmail.com",
-            style: TextStyle(
-                fontSize: 24.sp,
-                color: Colors.blue,
-                decoration: TextDecoration.underline),
-          )),
+        onTap: launchEmail,
+        child: Text(
+          "torath831@gmail.com",
+          style: Styless.textStyle24.copyWith(
+            color: Colors.blue,
+            decoration: TextDecoration.underline,
+            fontFamily: 'Rakkas',
+          ),
+        ),
+      ),
     );
   }
 }

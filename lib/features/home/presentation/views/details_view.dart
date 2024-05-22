@@ -11,7 +11,7 @@ class DetailsView extends StatelessWidget {
     return Scaffold(
       drawer: const CustomDrawer(),
       appBar: AppBar(
-        title: const Text("section name",style: Styless.textStyle24,),
+        title:  Text("section name",style: Styless.textStyle28,),
         centerTitle: true,
       ),
       body: const DetailsViewBody(),
