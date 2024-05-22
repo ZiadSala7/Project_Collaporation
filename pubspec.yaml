@@ -39,6 +39,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   scroll_snap_list: ^0.9.1
   shared_preferences: ^2.2.3
+  url_launcher: ^6.2.6
   video_player: ^2.8.6
 
 dev_dependencies:
