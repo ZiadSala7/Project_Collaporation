@@ -40,4 +40,10 @@ abstract class Styless {
     fontFamily: FontFamilyHelper.getLocalizedFamily(),
     color: AppColors.appBlack,
   );
+  static TextStyle textStyle14 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: FontFamilyHelper.getLocalizedFamily(),
+    color: AppColors.appBlack,
+  );
 }

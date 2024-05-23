@@ -36,12 +36,10 @@ class BackgroundSectionCard extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(8.sp),
               child: Text(
-                style: Styless.textStyle20,
+                style: Styless.textStyle14,
                 AppLocalizations.of(context)!
                     .translate(section.description)
                     .toString(),
-                maxLines: 5,
-                overflow: TextOverflow.ellipsis,
               ),
             ),
           ),
