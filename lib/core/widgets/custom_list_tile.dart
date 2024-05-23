@@ -1,3 +1,4 @@
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomListTile extends StatelessWidget {
@@ -15,12 +16,11 @@ class CustomListTile extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: ListTile(
-        title: Text(text),
-        titleTextStyle: Theme.of(context).textTheme.displayMedium!.copyWith(
-              fontSize: 24,
-            ),
-        leading: icon
-      ),
+          title: Text(text),
+          titleTextStyle: Styless.textStyle28.copyWith(
+            fontWeight: FontWeight.w400,
+          ),
+          leading: icon),
     );
   }
 }

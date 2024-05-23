@@ -6,13 +6,14 @@ abstract class FontFamilyHelper {
 
   static const String cairoArabic = 'Cairo';
   static const String poppinsEnglish = 'Poppins';
+  static const String rakkasEnglish = 'Rakkas';
 
   static String getLocalizedFamily() {
     final currentLang = SharedPref().getString(PrefKeys.language);
     if (currentLang == 'ar') {
       return cairoArabic;
     } else {
-      return poppinsEnglish;
+      return rakkasEnglish;
     }
   }
 }
