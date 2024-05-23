@@ -114,14 +114,6 @@ flutter:
         - asset: assets/fonts/arabic/cairo/Cairo-Regular.ttf
           weight: 400
     # English Font
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/english/poppins/Poppins-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/english/poppins/Poppins-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/english/poppins/Poppins-Regular.ttf
-          weight: 400
     - family: Rakkas
       fonts:
         - asset: assets/fonts/Rakkas-Regular.ttf
