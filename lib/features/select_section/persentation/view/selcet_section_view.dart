@@ -28,7 +28,7 @@ class _SelectSectionScreenState extends State<SelectSectionScreen> {
               duration: animationDuration,
               child: CustomLinearButton(
                 height: 65.h,
-                width: 150.h,
+                width: 150.w,
                 onPressed: () {},
                 child: Text(
                   AppLocalizations.of(context)!
@@ -45,7 +45,7 @@ class _SelectSectionScreenState extends State<SelectSectionScreen> {
               duration: animationDuration,
               child: CustomLinearButton(
                 height: 65.h,
-                width: 150.h,
+                width: 150.w,
                 onPressed: () {
                   Navigator.push(
                       context,
