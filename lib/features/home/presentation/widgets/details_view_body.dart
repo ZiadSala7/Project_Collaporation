@@ -1,6 +1,7 @@
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
+import 'package:cv_project_team/features/audios_screen/presentation/view/audio_screen.dart';
 import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -92,10 +93,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
               ),
             ),
           ),
-          Scaffold(
-              body: Center(
-            child: Text(local.translate(LangKeys.audios).toString()),
-          )),
+        const  AudioScreen(),
           Scaffold(
               body: Center(
             child: Text(local.translate(LangKeys.videos).toString()),

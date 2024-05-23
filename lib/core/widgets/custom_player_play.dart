@@ -6,11 +6,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomPlayerPlay extends StatelessWidget {
-  const CustomPlayerPlay({super.key, required this.audioPath});
+  const CustomPlayerPlay(
+      {super.key,
+      required this.audioPath,
+      required this.startAnimation,
+      required this.index});
   final String audioPath;
-
+  final bool startAnimation;
+  final int index;
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: BlocBuilder<AudioCubit, AudioState>(builder: (context, state) {
         return GestureDetector(
@@ -29,14 +35,20 @@ class CustomPlayerPlay extends StatelessWidget {
               },
             );
           },
-          child: Container(
+          child: AnimatedContainer(
+            transform: Matrix4.translationValues(
+                startAnimation ? 
+                0 : screenWidth, 0, 0),
+            height: 50.h,
+            alignment: Alignment.centerRight,
+            color: Colors.amber,
             margin: const EdgeInsets.all(8),
             // color:AppColors.secondryColor,
+            duration: Duration(milliseconds: 300 + (index * 200)),
             child: ListTile(
               title: const Text("Audio"),
               leading: CircleAvatar(
-                  radius: 20.sp,
-                  child: const Icon(Icons.play_arrow_rounded)),
+                  radius: 20.sp, child: const Icon(Icons.play_arrow_rounded)),
             ),
           ),
         );
