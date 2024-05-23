@@ -46,4 +46,6 @@ class LangKeys {
   static const String textAndImages = 'textAndImages';
   static const String audios = 'audios';
   static const String videos = 'videos';
+
+  static const String guideVideo = 'guideVideo';
 }
