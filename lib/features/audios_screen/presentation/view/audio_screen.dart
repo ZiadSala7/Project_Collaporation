@@ -29,7 +29,7 @@ class _AudioScreenState extends State<AudioScreen> {
         child: ListView.builder(
           primary: false,
           shrinkWrap: true,
-          itemCount: 20,
+          itemCount: 1,
           itemBuilder: (context, index) {
             return CustomPlayerPlay(
               audioPath: section.audioPath,

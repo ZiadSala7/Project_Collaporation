@@ -9,13 +9,11 @@ class SelectSectionViewBody extends StatelessWidget {
     required this.pageNotifier,
     required this.sectionSelectorNotifier,
     required this.controller,
-    required this.section,
   });
 
   final ValueNotifier<double> pageNotifier;
   final ValueNotifier<int> sectionSelectorNotifier;
   final PageController controller;
-  final SectionCardModels section;
 
   double _getOffsetX(double percent) => percent.isNegative ? 40.0 : -40.0;
 

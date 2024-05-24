@@ -4,18 +4,18 @@ import 'package:cv_project_team/core/common/widgets/custom_linear_button.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
-import 'package:cv_project_team/features/select_section/persentation/view/details_screen.dart';
+import 'package:cv_project_team/features/select_section/persentation/view/select_section_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class SelectSectionScreen extends StatefulWidget {
-  const SelectSectionScreen({super.key});
+class DetailsView extends StatefulWidget {
+  const DetailsView({super.key});
 
   @override
-  State<SelectSectionScreen> createState() => _SelectSectionScreenState();
+  State<DetailsView> createState() => _DetailsViewState();
 }
 
-class _SelectSectionScreenState extends State<SelectSectionScreen> {
+class _DetailsViewState extends State<DetailsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +51,7 @@ class _SelectSectionScreenState extends State<SelectSectionScreen> {
                       context,
                       MaterialPageRoute(
                           builder: (BuildContext context) =>
-                              const DetailsScreen()));
+                              const SelectSectionView()));
                 },
                 child: Text(
                   AppLocalizations.of(context)!

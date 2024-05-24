@@ -5,7 +5,7 @@ import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/styles/snaping%20effect/snap_model.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
-import 'package:cv_project_team/features/select_section/persentation/view/selcet_section_view.dart';
+import 'package:cv_project_team/features/select_section/persentation/view/details_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
@@ -97,7 +97,7 @@ Widget _builItem(BuildContext context, int index) {
         Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const SelectSectionScreen(),
+              builder: (context) => const DetailsView(),
             ));
       }
     },
