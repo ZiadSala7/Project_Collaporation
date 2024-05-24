@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/app/constant.dart';
 import 'package:cv_project_team/core/common/animations/animate_do.dart';
+import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
@@ -70,6 +71,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     pageNotifier: pageNotifier,
                     sectionSelectorNotifier: sectionSelectorNotifier,
                     controller: controller,
+                    id: section.id,
                   ),
                   Positioned.fill(
                     top: null,

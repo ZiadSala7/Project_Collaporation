@@ -37,8 +37,7 @@ class CustomPlayerPlay extends StatelessWidget {
           },
           child: AnimatedContainer(
             transform: Matrix4.translationValues(
-                startAnimation ? 
-                0 : screenWidth, 0, 0),
+                startAnimation ? 0 : screenWidth, 0, 0),
             height: 50.h,
             alignment: Alignment.centerRight,
             color: Colors.amber,

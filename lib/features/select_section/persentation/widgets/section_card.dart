@@ -71,9 +71,9 @@ class SectionCard extends StatelessWidget {
                   flightShuttleBuilder: (_, animation, __, ___, ____) {
                     return AnimatedBuilder(
                       animation: animation,
-                      builder: (context, _) => const Material(
+                      builder: (context, _) => Material(
                         type: MaterialType.transparency,
-                        child: DetailsView(),
+                        child: DetailsView(id: section.id,),
                       ),
                     );
                   },
