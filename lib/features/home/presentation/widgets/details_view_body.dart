@@ -18,6 +18,7 @@ class DetailsViewBody extends StatefulWidget {
 
 class _DetailsViewBodyState extends State<DetailsViewBody> {
   final PageController _pageController = PageController();
+
   int pageIndex = 0;
   @override
   void dispose() {
@@ -27,6 +28,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
 
   @override
   Widget build(BuildContext context) {
+   
     final local = AppLocalizations.of(context);
     return Scaffold(
       // backgroundColor: mobileBackgroundColor,
@@ -56,14 +58,6 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             ),
             label: local.translate(LangKeys.audios).toString(),
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(
-          //     Icons.video_collection_rounded,
-          //     size: 27.sp,
-          //     color: pageIndex == 2 ? Colors.amber : Colors.white,
-          //   ),
-          //   label: local.translate(LangKeys.videos).toString(),
-          // ),
         ],
       ),
       body: PageView(
@@ -96,7 +90,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             ),
           ),
           AudioScreen(
-            section: section,
+            section: widget.section,
           ),
           Scaffold(
               body: Center(

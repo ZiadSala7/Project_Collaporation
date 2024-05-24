@@ -1,3 +1,4 @@
+
 import 'dart:ui';
 
 import 'package:cv_project_team/core/common/models/section_model.dart';
@@ -28,6 +29,7 @@ class SectionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 200),
       curve: Curves.fastOutSlowIn,
@@ -65,15 +67,14 @@ class SectionCard extends StatelessWidget {
                 },
                 child: Hero(
                   tag: section.id,
-                  // -----------------------------------------------
-                  // Custom hero widget
-                  // -----------------------------------------------
                   flightShuttleBuilder: (_, animation, __, ___, ____) {
                     return AnimatedBuilder(
                       animation: animation,
                       builder: (context, _) => Material(
                         type: MaterialType.transparency,
-                        child: DetailsView(section: section,),
+                        child: DetailsView(
+                          section: section,
+                        ),
                       ),
                     );
                   },

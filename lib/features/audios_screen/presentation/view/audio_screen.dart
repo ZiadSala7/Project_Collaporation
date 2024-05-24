@@ -26,17 +26,17 @@ class _AudioScreenState extends State<AudioScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: ListView.builder(
-          primary: false,
-          shrinkWrap: true,
-          itemCount: 1,
-          itemBuilder: (context, index) {
-            return CustomPlayerPlay(
-              audioPath: section.audioPath,
-              startAnimation: startAnimation,
-              index: index,
-            );
-          },
-        ),
+                primary: false,
+                shrinkWrap: true,
+                itemCount: widget.section.audioPath.length,
+                itemBuilder: (context, index) {
+                  return CustomPlayerPlay(
+                    audioPath: widget.section.audioPath[index],
+                    startAnimation: startAnimation,
+                    index: index,
+                  );
+                },
+              ),
       ),
     );
   }
