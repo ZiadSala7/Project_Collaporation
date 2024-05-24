@@ -1,3 +1,4 @@
+import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
@@ -9,8 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DetailsViewBody extends StatefulWidget {
-  const DetailsViewBody({super.key});
-
+  const DetailsViewBody({super.key, required this.section});
+  final SectionCardModels section;
   @override
   State<DetailsViewBody> createState() => _DetailsViewBodyState();
 }
@@ -94,7 +95,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
               ),
             ),
           ),
-        const  AudioScreen(),
+          const AudioScreen(),
           Scaffold(
               body: Center(
             child: Text(local.translate(LangKeys.videos).toString()),
