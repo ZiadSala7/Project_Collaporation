@@ -15,14 +15,14 @@ class SectionCardModels {
   final String name;
   final String imageUrl;
   final String description;
-  final String audioPath;
+  final dynamic audioPath;
 
   SectionCardModels copyWith({
     String? id,
     String? name,
     String? imageUrl,
     String? description,
-    String? audioPath,
+    dynamic audioPath,
   }) =>
       SectionCardModels(
         id: id ?? this.id,
@@ -39,6 +39,7 @@ class SectionCardModels {
       name: LangKeys.theFort,
       imageUrl: _imagesUrls[1],
       description: LangKeys.descriptionTheFort,
+      audioPath: null,
     ),
     section.copyWith(
       id: '3',
@@ -59,6 +60,11 @@ class SectionCardModels {
       name: LangKeys.temple,
       imageUrl: _imagesUrls[4],
       description: LangKeys.descriptionTemple,
+      audioPath: [
+        Assets.audiosSouthHenyaAudios,
+        Assets.audiosEastHenyaAudios,
+        Assets.audiosNorthHenyaAudios
+      ]
     ),
     section.copyWith(
       id: '6',
