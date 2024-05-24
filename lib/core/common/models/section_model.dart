@@ -39,7 +39,7 @@ class SectionCardModels {
       name: LangKeys.theFort,
       imageUrl: _imagesUrls[1],
       description: LangKeys.descriptionTheFort,
-      audioPath: null,
+      audioPath: [Assets.audiosMdkhlAud],
     ),
     section.copyWith(
       id: '3',
