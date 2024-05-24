@@ -1,53 +1,100 @@
 class AppImages {
   AppImages._();
-  
-  static const String imagesAlHekalEastHenyaLevel1Elevel11 = "assets/images/AlHekal/eastHenya/level 1/elevel1_1.jpg";
-  static const String imagesAlHekalEastHenyaLevel1Elevel12 = "assets/images/AlHekal/eastHenya/level 1/elevel1_2.jpg";
-  static const String imagesAlHekalEastHenyaLevel2Elevel21 = "assets/images/AlHekal/eastHenya/level 2/elevel2_1.jpg";
-  static const String imagesAlHekalEastHenyaLevel2Elevel22 = "assets/images/AlHekal/eastHenya/level 2/elevel2_2.jpg";
-  static const String imagesAlHekalEastHenyaLevel2Elevel23 = "assets/images/AlHekal/eastHenya/level 2/elevel2_3.jpg";
-  static const String imagesAlHekalEastHenyaLevel2Elevel24 = "assets/images/AlHekal/eastHenya/level 2/elevel2_4.jpg";
-  static const String imagesAlHekalEastHenyaLevel2Elevel25 = "assets/images/AlHekal/eastHenya/level 2/elevel2_5.jpg";
-  static const String imagesAlHekalEastHenyaLevel2Elevel26 = "assets/images/AlHekal/eastHenya/level 2/elevel2_6.jpg";
-  static const String imagesAlHekalEastHenyaPp1 = "assets/images/AlHekal/eastHenya/pp1.jpg";
-  static const String imagesAlHekalEastHenyaPp2 = "assets/images/AlHekal/eastHenya/pp2.jpg";
-  static const String imagesAlHekalEastHenyaPp3 = "assets/images/AlHekal/eastHenya/pp3.jpg";
-  static const String imagesAlHekalEastHenyaPp4 = "assets/images/AlHekal/eastHenya/pp4.jpg";
-  static const String imagesAlHekalEastHenyaPp5 = "assets/images/AlHekal/eastHenya/pp5.jpg";
-  static const String imagesAlHekalEastHenyaPp6 = "assets/images/AlHekal/eastHenya/pp6.jpg";
-  static const String imagesAlHekalEastHenyaPp7 = "assets/images/AlHekal/eastHenya/pp7.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb1 = "assets/images/AlHekal/eastHenya/quba/qb1.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb2 = "assets/images/AlHekal/eastHenya/quba/qb2.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb3 = "assets/images/AlHekal/eastHenya/quba/qb3.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb4 = "assets/images/AlHekal/eastHenya/quba/qb4.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb5 = "assets/images/AlHekal/eastHenya/quba/qb5.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb6 = "assets/images/AlHekal/eastHenya/quba/qb6.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb7 = "assets/images/AlHekal/eastHenya/quba/qb7.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb8 = "assets/images/AlHekal/eastHenya/quba/qb8.jpg";
-  static const String imagesAlHekalEastHenyaQubaQb9 = "assets/images/AlHekal/eastHenya/quba/qb9.jpg";
-  static const String imagesAlHekalNorthHenya1 = "assets/images/AlHekal/northHenya/1.jpg";
-  static const String imagesAlHekalNorthHenya2 = "assets/images/AlHekal/northHenya/2.jpg";
-  static const String imagesAlHekalNorthHenya3 = "assets/images/AlHekal/northHenya/3.jpg";
-  static const String imagesAlHekalNorthHenya4 = "assets/images/AlHekal/northHenya/4.jpg";
-  static const String imagesAlHekalNorthHenya5 = "assets/images/AlHekal/northHenya/5.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl11 = "assets/images/AlHekal/northHenya/level 1/lvl1_1.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl12 = "assets/images/AlHekal/northHenya/level 1/lvl1_2.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl13 = "assets/images/AlHekal/northHenya/level 1/lvl1_3.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl14 = "assets/images/AlHekal/northHenya/level 1/lvl1_4.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl15 = "assets/images/AlHekal/northHenya/level 1/lvl1_5.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl16 = "assets/images/AlHekal/northHenya/level 1/lvl1_6.jpg";
-  static const String imagesAlHekalNorthHenyaLevel1Lvl17 = "assets/images/AlHekal/northHenya/level 1/lvl1_7.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl21 = "assets/images/AlHekal/northHenya/level 2/lvl2_1.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl22 = "assets/images/AlHekal/northHenya/level 2/lvl2_2.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl23 = "assets/images/AlHekal/northHenya/level 2/lvl2_3.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl24 = "assets/images/AlHekal/northHenya/level 2/lvl2_4.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl25 = "assets/images/AlHekal/northHenya/level 2/lvl2_5.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl26 = "assets/images/AlHekal/northHenya/level 2/lvl2_6.jpg";
-  static const String imagesAlHekalNorthHenyaLevel2Lvl27 = "assets/images/AlHekal/northHenya/level 2/lvl2_7.jpg";
-  static const String imagesAlHekalNorthHenyaQubaQba1 = "assets/images/AlHekal/northHenya/quba/qba1.jpg";
-  static const String imagesAlHekalNorthHenyaQubaQba2 = "assets/images/AlHekal/northHenya/quba/qba2.jpg";
-  static const String imagesAlHekalNorthHenyaQubaQba3 = "assets/images/AlHekal/northHenya/quba/qba3.jpg";
-  static const String imagesAlHekalNorthHenyaQubaQba4 = "assets/images/AlHekal/northHenya/quba/qba4.jpg";
+
+  static const String imagesAlHekalEastHenyaLevel1Elevel11 =
+      "assets/images/AlHekal/eastHenya/level 1/elevel1_1.jpg";
+  static const String imagesAlHekalEastHenyaLevel1Elevel12 =
+      "assets/images/AlHekal/eastHenya/level 1/elevel1_2.jpg";
+  static const String imagesAlHekalEastHenyaLevel2Elevel21 =
+      "assets/images/AlHekal/eastHenya/level 2/elevel2_1.jpg";
+  static const String imagesAlHekalEastHenyaLevel2Elevel22 =
+      "assets/images/AlHekal/eastHenya/level 2/elevel2_2.jpg";
+  static const String imagesAlHekalEastHenyaLevel2Elevel23 =
+      "assets/images/AlHekal/eastHenya/level 2/elevel2_3.jpg";
+  static const String imagesAlHekalEastHenyaLevel2Elevel24 =
+      "assets/images/AlHekal/eastHenya/level 2/elevel2_4.jpg";
+  static const String imagesAlHekalEastHenyaLevel2Elevel25 =
+      "assets/images/AlHekal/eastHenya/level 2/elevel2_5.jpg";
+  static const String imagesAlHekalEastHenyaLevel2Elevel26 =
+      "assets/images/AlHekal/eastHenya/level 2/elevel2_6.jpg";
+  static const String imagesAlHekalEastHenyaPp1 =
+      "assets/images/AlHekal/eastHenya/pp1.jpg";
+  static const String imagesAlHekalEastHenyaPp2 =
+      "assets/images/AlHekal/eastHenya/pp2.jpg";
+  static const String imagesAlHekalEastHenyaPp3 =
+      "assets/images/AlHekal/eastHenya/pp3.jpg";
+  static const String imagesAlHekalEastHenyaPp4 =
+      "assets/images/AlHekal/eastHenya/pp4.jpg";
+  static const String imagesAlHekalEastHenyaPp5 =
+      "assets/images/AlHekal/eastHenya/pp5.jpg";
+  static const String imagesAlHekalEastHenyaPp6 =
+      "assets/images/AlHekal/eastHenya/pp6.jpg";
+  static const String imagesAlHekalEastHenyaPp7 =
+      "assets/images/AlHekal/eastHenya/pp7.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb1 =
+      "assets/images/AlHekal/eastHenya/quba/qb1.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb2 =
+      "assets/images/AlHekal/eastHenya/quba/qb2.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb3 =
+      "assets/images/AlHekal/eastHenya/quba/qb3.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb4 =
+      "assets/images/AlHekal/eastHenya/quba/qb4.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb5 =
+      "assets/images/AlHekal/eastHenya/quba/qb5.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb6 =
+      "assets/images/AlHekal/eastHenya/quba/qb6.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb7 =
+      "assets/images/AlHekal/eastHenya/quba/qb7.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb8 =
+      "assets/images/AlHekal/eastHenya/quba/qb8.jpg";
+  static const String imagesAlHekalEastHenyaQubaQb9 =
+      "assets/images/AlHekal/eastHenya/quba/qb9.jpg";
+  static const String imagesAlHekalNorthHenya1 =
+      "assets/images/AlHekal/northHenya/1.jpg";
+  static const String imagesAlHekalNorthHenya2 =
+      "assets/images/AlHekal/northHenya/2.jpg";
+  static const String imagesAlHekalNorthHenya3 =
+      "assets/images/AlHekal/northHenya/3.jpg";
+  static const String imagesAlHekalNorthHenya4 =
+      "assets/images/AlHekal/northHenya/4.jpg";
+  static const String imagesAlHekalNorthHenya5 =
+      "assets/images/AlHekal/northHenya/5.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl11 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_1.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl12 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_2.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl13 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_3.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl14 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_4.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl15 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_5.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl16 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_6.jpg";
+  static const String imagesAlHekalNorthHenyaLevel1Lvl17 =
+      "assets/images/AlHekal/northHenya/level 1/lvl1_7.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl21 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_1.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl22 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_2.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl23 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_3.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl24 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_4.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl25 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_5.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl26 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_6.jpg";
+  static const String imagesAlHekalNorthHenyaLevel2Lvl27 =
+      "assets/images/AlHekal/northHenya/level 2/lvl2_7.jpg";
+  static const String imagesAlHekalNorthHenyaQubaQba1 =
+      "assets/images/AlHekal/northHenya/quba/qba1.jpg";
+  static const String imagesAlHekalNorthHenyaQubaQba2 =
+      "assets/images/AlHekal/northHenya/quba/qba2.jpg";
+  static const String imagesAlHekalNorthHenyaQubaQba3 =
+      "assets/images/AlHekal/northHenya/quba/qba3.jpg";
+  static const String imagesAlHekalNorthHenyaQubaQba4 =
+      "assets/images/AlHekal/northHenya/quba/qba4.jpg";
   static const String imagesAlHekalPh1 = "assets/images/AlHekal/ph1.jpg";
   static const String imagesAlHekalPh10 = "assets/images/AlHekal/ph10.jpg";
   static const String imagesAlHekalPh11 = "assets/images/AlHekal/ph11.jpg";
@@ -60,25 +107,45 @@ class AppImages {
   static const String imagesAlHekalPh7 = "assets/images/AlHekal/ph7.jpg";
   static const String imagesAlHekalPh8 = "assets/images/AlHekal/ph8.jpg";
   static const String imagesAlHekalPh9 = "assets/images/AlHekal/ph9.jpg";
-  static const String imagesAlHekalSouthHenyaLevel1Levl11 = "assets/images/AlHekal/southHenya/level 1/levl1_1.jpg";
-  static const String imagesAlHekalSouthHenyaLevel1Levl12 = "assets/images/AlHekal/southHenya/level 1/levl1_2.jpg";
-  static const String imagesAlHekalSouthHenyaLevel1Levl13 = "assets/images/AlHekal/southHenya/level 1/levl1_3.jpg";
-  static const String imagesAlHekalSouthHenyaLevel1Levl14 = "assets/images/AlHekal/southHenya/level 1/levl1_4.jpg";
-  static const String imagesAlHekalSouthHenyaLevel1Levl15 = "assets/images/AlHekal/southHenya/level 1/levl1_5.jpg";
-  static const String imagesAlHekalSouthHenyaLevel1Levl16 = "assets/images/AlHekal/southHenya/level 1/levl1_6.jpg";
-  static const String imagesAlHekalSouthHenyaLevel2Levl21 = "assets/images/AlHekal/southHenya/level 2/levl2_1.jpg";
-  static const String imagesAlHekalSouthHenyaLevel2Levl22 = "assets/images/AlHekal/southHenya/level 2/levl2_2.jpg";
-  static const String imagesAlHekalSouthHenyaLevel2Levl23 = "assets/images/AlHekal/southHenya/level 2/levl2_3.jpg";
-  static const String imagesAlHekalSouthHenyaLevel2Levl24 = "assets/images/AlHekal/southHenya/level 2/levl2_4.jpg";
-  static const String imagesAlHekalSouthHenyaLevel2Levl25 = "assets/images/AlHekal/southHenya/level 2/levl2_5.jpg";
-  static const String imagesAlHekalSouthHenyaP1 = "assets/images/AlHekal/southHenya/p1.jpg";
-  static const String imagesAlHekalSouthHenyaP2 = "assets/images/AlHekal/southHenya/p2.jpg";
-  static const String imagesAlHekalSouthHenyaP3 = "assets/images/AlHekal/southHenya/p3.jpg";
-  static const String imagesAlHekalSouthHenyaP4 = "assets/images/AlHekal/southHenya/p4.jpg";
-  static const String imagesAlHekalSouthHenyaQubaQ1 = "assets/images/AlHekal/southHenya/quba/q1.jpg";
-  static const String imagesAlHekalSouthHenyaQubaQ2 = "assets/images/AlHekal/southHenya/quba/q2.jpg";
-  static const String imagesAlHekalSouthHenyaQubaQ3 = "assets/images/AlHekal/southHenya/quba/q3.jpg";
-  static const String imagesAlHekalSouthHenyaQubaQ4 = "assets/images/AlHekal/southHenya/quba/q4.jpg";
+  static const String imagesAlHekalSouthHenyaLevel1Levl11 =
+      "assets/images/AlHekal/southHenya/level 1/levl1_1.jpg";
+  static const String imagesAlHekalSouthHenyaLevel1Levl12 =
+      "assets/images/AlHekal/southHenya/level 1/levl1_2.jpg";
+  static const String imagesAlHekalSouthHenyaLevel1Levl13 =
+      "assets/images/AlHekal/southHenya/level 1/levl1_3.jpg";
+  static const String imagesAlHekalSouthHenyaLevel1Levl14 =
+      "assets/images/AlHekal/southHenya/level 1/levl1_4.jpg";
+  static const String imagesAlHekalSouthHenyaLevel1Levl15 =
+      "assets/images/AlHekal/southHenya/level 1/levl1_5.jpg";
+  static const String imagesAlHekalSouthHenyaLevel1Levl16 =
+      "assets/images/AlHekal/southHenya/level 1/levl1_6.jpg";
+  static const String imagesAlHekalSouthHenyaLevel2Levl21 =
+      "assets/images/AlHekal/southHenya/level 2/levl2_1.jpg";
+  static const String imagesAlHekalSouthHenyaLevel2Levl22 =
+      "assets/images/AlHekal/southHenya/level 2/levl2_2.jpg";
+  static const String imagesAlHekalSouthHenyaLevel2Levl23 =
+      "assets/images/AlHekal/southHenya/level 2/levl2_3.jpg";
+  static const String imagesAlHekalSouthHenyaLevel2Levl24 =
+      "assets/images/AlHekal/southHenya/level 2/levl2_4.jpg";
+  static const String imagesAlHekalSouthHenyaLevel2Levl25 =
+      "assets/images/AlHekal/southHenya/level 2/levl2_5.jpg";
+  static const String imagesAlHekalSouthHenyaP1 =
+      "assets/images/AlHekal/southHenya/p1.jpg";
+  static const String imagesAlHekalSouthHenyaP2 =
+      "assets/images/AlHekal/southHenya/p2.jpg";
+  static const String imagesAlHekalSouthHenyaP3 =
+      "assets/images/AlHekal/southHenya/p3.jpg";
+  static const String imagesAlHekalSouthHenyaP4 =
+      "assets/images/AlHekal/southHenya/p4.jpg";
+  static const String imagesAlHekalSouthHenyaQubaQ1 =
+      "assets/images/AlHekal/southHenya/quba/q1.jpg";
+  static const String imagesAlHekalSouthHenyaQubaQ2 =
+      "assets/images/AlHekal/southHenya/quba/q2.jpg";
+  static const String imagesAlHekalSouthHenyaQubaQ3 =
+      "assets/images/AlHekal/southHenya/quba/q3.jpg";
+  static const String imagesAlHekalSouthHenyaQubaQ4 =
+      "assets/images/AlHekal/southHenya/quba/q4.jpg";
+  // =================
   static const String imagesAlhesnH1 = "assets/images/Alhesn/h1.jpeg";
   static const String imagesAlhesnH10 = "assets/images/Alhesn/h10.jpeg";
   static const String imagesAlhesnH11 = "assets/images/Alhesn/h11.jpeg";
@@ -114,6 +181,7 @@ class AppImages {
   static const String imagesAlhesnH7 = "assets/images/Alhesn/h7.jpeg";
   static const String imagesAlhesnH8 = "assets/images/Alhesn/h8.jpeg";
   static const String imagesAlhesnH9 = "assets/images/Alhesn/h9.jpeg";
+  //==========================
   static const String imagesAlmadkhalM1 = "assets/images/Almadkhal/m1.jpg";
   static const String imagesAlmadkhalM10 = "assets/images/Almadkhal/m10.jpg";
   static const String imagesAlmadkhalM11 = "assets/images/Almadkhal/m11.jpg";
@@ -130,6 +198,7 @@ class AppImages {
   static const String imagesAlmadkhalM7 = "assets/images/Almadkhal/m7.jpg";
   static const String imagesAlmadkhalM8 = "assets/images/Almadkhal/m8.jpg";
   static const String imagesAlmadkhalM9 = "assets/images/Almadkhal/m9.jpg";
+  // ===========================
   static const String imagesAlsahnS1 = "assets/images/Alsahn/s1.jpg";
   static const String imagesAlsahnS10 = "assets/images/Alsahn/s10.jpg";
   static const String imagesAlsahnS11 = "assets/images/Alsahn/s11.jpg";
@@ -153,29 +222,48 @@ class AppImages {
   static const String imagesAlsahnS7 = "assets/images/Alsahn/s7.jpg";
   static const String imagesAlsahnS8 = "assets/images/Alsahn/s8.jpg";
   static const String imagesAlsahnS9 = "assets/images/Alsahn/s9.jpg";
+  // ===================================
   static const String imagesAzraaAz1 = "assets/images/azraa/az1.jpg";
   static const String imagesAzraaAz2 = "assets/images/azraa/az2.jpg";
   static const String imagesAzraaAz3 = "assets/images/azraa/az3.jpg";
   static const String imagesAzraaAz4 = "assets/images/azraa/az4.jpg";
   static const String imagesAzraaAz5 = "assets/images/azraa/az5.jpg";
+  // =======================================
   static const String imagesLogo = "assets/images/logo.jpg";
   static const String imagesNoNetwork = "assets/images/no_network.jpg";
-  static const String imagesNorthHekalNkl1 = "assets/images/north hekal/nkl1.jpg";
-  static const String imagesNorthHekalNkl10 = "assets/images/north hekal/nkl10.jpg";
-  static const String imagesNorthHekalNkl11 = "assets/images/north hekal/nkl11.jpg";
-  static const String imagesNorthHekalNkl12 = "assets/images/north hekal/nkl12.jpg";
-  static const String imagesNorthHekalNkl13 = "assets/images/north hekal/nkl13.jpg";
-  static const String imagesNorthHekalNkl15 = "assets/images/north hekal/nkl15.jpg";
-  static const String imagesNorthHekalNkl16 = "assets/images/north hekal/nkl16.jpg";
-  static const String imagesNorthHekalNkl17 = "assets/images/north hekal/nkl17.jpg";
-  static const String imagesNorthHekalNkl2 = "assets/images/north hekal/nkl2.jpg";
-  static const String imagesNorthHekalNkl3 = "assets/images/north hekal/nkl3.jpg";
-  static const String imagesNorthHekalNkl4 = "assets/images/north hekal/nkl4.jpg";
-  static const String imagesNorthHekalNkl5 = "assets/images/north hekal/nkl5.jpg";
-  static const String imagesNorthHekalNkl6 = "assets/images/north hekal/nkl6.jpg";
-  static const String imagesNorthHekalNkl7 = "assets/images/north hekal/nkl7.jpg";
-  static const String imagesNorthHekalNkl8 = "assets/images/north hekal/nkl8.jpg";
-  static const String imagesNorthHekalNkl9 = "assets/images/north hekal/nkl9.jpg";
+
+  static const String imagesNorthHekalNkl1 =
+      "assets/images/north hekal/nkl1.jpg";
+  static const String imagesNorthHekalNkl10 =
+      "assets/images/north hekal/nkl10.jpg";
+  static const String imagesNorthHekalNkl11 =
+      "assets/images/north hekal/nkl11.jpg";
+  static const String imagesNorthHekalNkl12 =
+      "assets/images/north hekal/nkl12.jpg";
+  static const String imagesNorthHekalNkl13 =
+      "assets/images/north hekal/nkl13.jpg";
+  static const String imagesNorthHekalNkl15 =
+      "assets/images/north hekal/nkl15.jpg";
+  static const String imagesNorthHekalNkl16 =
+      "assets/images/north hekal/nkl16.jpg";
+  static const String imagesNorthHekalNkl17 =
+      "assets/images/north hekal/nkl17.jpg";
+  static const String imagesNorthHekalNkl2 =
+      "assets/images/north hekal/nkl2.jpg";
+  static const String imagesNorthHekalNkl3 =
+      "assets/images/north hekal/nkl3.jpg";
+  static const String imagesNorthHekalNkl4 =
+      "assets/images/north hekal/nkl4.jpg";
+  static const String imagesNorthHekalNkl5 =
+      "assets/images/north hekal/nkl5.jpg";
+  static const String imagesNorthHekalNkl6 =
+      "assets/images/north hekal/nkl6.jpg";
+  static const String imagesNorthHekalNkl7 =
+      "assets/images/north hekal/nkl7.jpg";
+  static const String imagesNorthHekalNkl8 =
+      "assets/images/north hekal/nkl8.jpg";
+  static const String imagesNorthHekalNkl9 =
+      "assets/images/north hekal/nkl9.jpg";
   static const String imagesOldKhorasKh1 = "assets/images/old khoras/kh1.jpg";
   static const String imagesOldKhorasKh10 = "assets/images/old khoras/kh10.jpg";
   static const String imagesOldKhorasKh11 = "assets/images/old khoras/kh11.jpg";
@@ -202,37 +290,69 @@ class AppImages {
   static const String imagesOldKhorasKh8 = "assets/images/old khoras/kh8.jpg";
   static const String imagesOldKhorasKh9 = "assets/images/old khoras/kh9.jpg";
   // others images
-  static const String imagesOthersAzraa2DrankaDer = "assets/images/others/azraa2_dranka_der.jpg";
-  static const String imagesOthersAzraaDrankaDer = "assets/images/others/azraa_dranka_der.jpg";
-  static const String imagesOthersMargergesDer = "assets/images/others/margerges_der.jpg";
+  static const String imagesOthersAzraa2DrankaDer =
+      "assets/images/others/azraa2_dranka_der.jpg";
+  static const String imagesOthersAzraaDrankaDer =
+      "assets/images/others/azraa_dranka_der.jpg";
+  static const String imagesOthersMargergesDer =
+      "assets/images/others/margerges_der.jpg";
   static const String imagesOthersMhrqDer = "assets/images/others/mhrq_der.jpg";
-  static const String imagesOthersShohadaa2Der = "assets/images/others/shohadaa2_der.jpg";
-  static const String imagesOthersShohadaaDer = "assets/images/others/shohadaa_der.jpg";
-  static const String imagesOthersWhiteDer = "assets/images/others/white_der.jpg";
-  
-  static const String imagesOutsideDerOut1 = "assets/images/outside_der/out1.jpg";
-  static const String imagesOutsideDerOut2 = "assets/images/outside_der/out2.jpg";
-  static const String imagesOutsideDerOut3 = "assets/images/outside_der/out3.jpg";
-  static const String imagesOutsideDerOut4 = "assets/images/outside_der/out4.jpg";
-  static const String imagesOutsideDerOut5 = "assets/images/outside_der/out5.jpg";
-  static const String imagesOutsideDerOut6 = "assets/images/outside_der/out6.jpg";
-  static const String imagesOutsideDerOut7 = "assets/images/outside_der/out7.jpg";
-  static const String imagesPageUnderBuild = "assets/images/page_under_build.jpg";
-  static const String imagesSalatAlmaaedaMaaeda1 = "assets/images/salat Almaaeda/maaeda1.jpg";
-  static const String imagesSalatAlmaaedaMaaeda2 = "assets/images/salat Almaaeda/maaeda2.jpg";
-  static const String imagesSalatAlmaaedaMaaeda3 = "assets/images/salat Almaaeda/maaeda3.jpg";
-  static const String imagesSalatAlmaaedaMaaeda4 = "assets/images/salat Almaaeda/maaeda4.jpg";
-  static const String imagesSalatAlmaaedaMaaeda5 = "assets/images/salat Almaaeda/maaeda5.jpg";
-  static const String imagesSalatAlmaaedaMaaeda6 = "assets/images/salat Almaaeda/maaeda6.jpg";
-  static const String imagesSalatAlmaaedaMaaeda7 = "assets/images/salat Almaaeda/maaeda7.jpg";
-  static const String imagesSouthHekalHkl1 = "assets/images/south hekal/hkl1.jpg";
-  static const String imagesSouthHekalHkl2 = "assets/images/south hekal/hkl2.jpg";
-  static const String imagesSouthHekalHkl3 = "assets/images/south hekal/hkl3.jpg";
-  static const String imagesSouthHekalHkl4 = "assets/images/south hekal/hkl4.jpg";
-  static const String imagesSouthHekalHkl5 = "assets/images/south hekal/hkl5.jpg";
-  static const String imagesSouthHekalHkl6 = "assets/images/south hekal/hkl6.jpg";
-  static const String imagesSouthHekalHkl7 = "assets/images/south hekal/hkl7.jpg";
-  static const String imagesSouthHekalHkl8 = "assets/images/south hekal/hkl8.jpg";
+  static const String imagesOthersShohadaa2Der =
+      "assets/images/others/shohadaa2_der.jpg";
+  static const String imagesOthersShohadaaDer =
+      "assets/images/others/shohadaa_der.jpg";
+  static const String imagesOthersWhiteDer =
+      "assets/images/others/white_der.jpg";
+  // ==============================
+  static const String imagesOutsideDerOut1 =
+      "assets/images/outside_der/out1.jpg";
+  static const String imagesOutsideDerOut2 =
+      "assets/images/outside_der/out2.jpg";
+  static const String imagesOutsideDerOut3 =
+      "assets/images/outside_der/out3.jpg";
+  static const String imagesOutsideDerOut4 =
+      "assets/images/outside_der/out4.jpg";
+  static const String imagesOutsideDerOut5 =
+      "assets/images/outside_der/out5.jpg";
+  static const String imagesOutsideDerOut6 =
+      "assets/images/outside_der/out6.jpg";
+  // ===========================
+  static const String imagesOutsideDerOut7 =
+      "assets/images/outside_der/out7.jpg";
+  static const String imagesPageUnderBuild =
+      "assets/images/page_under_build.jpg";
+  static const String imagesSalatAlmaaedaMaaeda1 =
+      "assets/images/salat Almaaeda/maaeda1.jpg";
+  static const String imagesSalatAlmaaedaMaaeda2 =
+      "assets/images/salat Almaaeda/maaeda2.jpg";
+  static const String imagesSalatAlmaaedaMaaeda3 =
+      "assets/images/salat Almaaeda/maaeda3.jpg";
+  static const String imagesSalatAlmaaedaMaaeda4 =
+      "assets/images/salat Almaaeda/maaeda4.jpg";
+  static const String imagesSalatAlmaaedaMaaeda5 =
+      "assets/images/salat Almaaeda/maaeda5.jpg";
+  static const String imagesSalatAlmaaedaMaaeda6 =
+      "assets/images/salat Almaaeda/maaeda6.jpg";
+  static const String imagesSalatAlmaaedaMaaeda7 =
+      "assets/images/salat Almaaeda/maaeda7.jpg";
+  // =================================
+  static const String imagesSouthHekalHkl1 =
+      "assets/images/south hekal/hkl1.jpg";
+  static const String imagesSouthHekalHkl2 =
+      "assets/images/south hekal/hkl2.jpg";
+  static const String imagesSouthHekalHkl3 =
+      "assets/images/south hekal/hkl3.jpg";
+  static const String imagesSouthHekalHkl4 =
+      "assets/images/south hekal/hkl4.jpg";
+  static const String imagesSouthHekalHkl5 =
+      "assets/images/south hekal/hkl5.jpg";
+  static const String imagesSouthHekalHkl6 =
+      "assets/images/south hekal/hkl6.jpg";
+  static const String imagesSouthHekalHkl7 =
+      "assets/images/south hekal/hkl7.jpg";
+  static const String imagesSouthHekalHkl8 =
+      "assets/images/south hekal/hkl8.jpg";
+  // =======================================
   static const String imagesTurath = "assets/images/turath.png";
   static const String imagesSmile = "assets/images/smile.png";
 }
