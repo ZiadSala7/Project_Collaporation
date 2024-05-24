@@ -33,7 +33,9 @@ class CustomPlayerPlay extends StatelessWidget {
                   audioPath: audioPath,
                 );
               },
-            );
+            ).then((v) {
+              BlocProvider.of<AudioCubit>(context).pausePlayer();
+            });
           },
           child: AnimatedContainer(
             transform: Matrix4.translationValues(
