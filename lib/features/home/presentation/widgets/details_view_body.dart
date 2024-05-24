@@ -95,7 +95,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
               ),
             ),
           ),
-          const AudioScreen(),
+          AudioScreen(
+            section: section,
+          ),
           Scaffold(
               body: Center(
             child: Text(local.translate(LangKeys.videos).toString()),

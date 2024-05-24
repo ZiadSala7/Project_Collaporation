@@ -73,7 +73,7 @@ class SectionCard extends StatelessWidget {
                       animation: animation,
                       builder: (context, _) => Material(
                         type: MaterialType.transparency,
-                        child: DetailsView(id: section.id,),
+                        child: DetailsView(section: section,),
                       ),
                     );
                   },

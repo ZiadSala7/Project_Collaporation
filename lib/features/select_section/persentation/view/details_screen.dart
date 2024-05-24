@@ -71,7 +71,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     pageNotifier: pageNotifier,
                     sectionSelectorNotifier: sectionSelectorNotifier,
                     controller: controller,
-                    id: section.id,
+                    section: section,
                   ),
                   Positioned.fill(
                     top: null,

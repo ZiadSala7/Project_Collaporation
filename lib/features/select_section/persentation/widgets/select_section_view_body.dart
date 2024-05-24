@@ -8,13 +8,14 @@ class SelectSectionViewBody extends StatelessWidget {
     super.key,
     required this.pageNotifier,
     required this.sectionSelectorNotifier,
-    required this.controller, required this.id,
+    required this.controller,
+    required this.section,
   });
 
   final ValueNotifier<double> pageNotifier;
   final ValueNotifier<int> sectionSelectorNotifier;
   final PageController controller;
-  final String id ;
+  final SectionCardModels section;
 
   double _getOffsetX(double percent) => percent.isNegative ? 40.0 : -40.0;
 
@@ -66,7 +67,9 @@ class SelectSectionViewBody extends StatelessWidget {
                               const Duration(milliseconds: 800),
                           pageBuilder: (_, animation, __) => FadeTransition(
                             opacity: animation,
-                            child:  DetailsView(id: id,),
+                            child: DetailsView(
+                              section: section,
+                            ),
                           ),
                         ),
                       );
