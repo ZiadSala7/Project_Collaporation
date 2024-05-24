@@ -3,8 +3,8 @@ import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
-import 'package:cv_project_team/features/audios_screen/presentation/view/audio_screen.dart';
-import 'package:cv_project_team/features/home/presentation/widgets/custom_app_image.dart';
+import 'package:cv_project_team/features/section_details/presentation/view/audio_screen.dart';
+import 'package:cv_project_team/core/common/widgets/custom_app_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -92,10 +92,6 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
           AudioScreen(
             section: widget.section,
           ),
-          Scaffold(
-              body: Center(
-            child: Text(local.translate(LangKeys.videos).toString()),
-          )),
         ],
       ),
     );

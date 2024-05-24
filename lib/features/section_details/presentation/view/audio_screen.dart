@@ -1,5 +1,5 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
-import 'package:cv_project_team/core/widgets/custom_player_play.dart';
+import 'package:cv_project_team/core/common/widgets/custom_player_play.dart';
 import 'package:flutter/material.dart';
 
 class AudioScreen extends StatefulWidget {

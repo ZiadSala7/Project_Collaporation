@@ -1,8 +1,8 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
-import 'package:cv_project_team/core/widgets/custom_drawer.dart';
-import 'package:cv_project_team/features/home/presentation/widgets/details_view_body.dart';
+import 'package:cv_project_team/core/common/widgets/custom_drawer.dart';
+import 'package:cv_project_team/features/section_details/presentation/widgets/details_view_body.dart';
 import 'package:flutter/material.dart';
 
 class DetailsView extends StatelessWidget {

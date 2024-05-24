@@ -1,6 +1,6 @@
 import 'package:cv_project_team/core/app/audio_cubit/audio_cubit.dart';
 import 'package:cv_project_team/core/app/audio_cubit/audio_state.dart';
-import 'package:cv_project_team/core/widgets/custom_player_play_body.dart';
+import 'package:cv_project_team/core/common/widgets/custom_player_play_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

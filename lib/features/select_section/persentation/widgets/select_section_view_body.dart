@@ -1,5 +1,5 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
-import 'package:cv_project_team/features/home/presentation/views/details_view.dart';
+import 'package:cv_project_team/features/section_details/presentation/view/details_view.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/section_card.dart';
 import 'package:flutter/material.dart';
 

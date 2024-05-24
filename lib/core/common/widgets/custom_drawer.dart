@@ -4,7 +4,7 @@ import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
-import 'package:cv_project_team/core/widgets/custom_list_tile.dart';
+import 'package:cv_project_team/core/common/widgets/custom_list_tile.dart';
 import 'package:cv_project_team/features/about/presentation/about_view.dart';
 import 'package:cv_project_team/features/home/presentation/views/home_view.dart';
 import 'package:cv_project_team/features/settings/settings_view.dart';
