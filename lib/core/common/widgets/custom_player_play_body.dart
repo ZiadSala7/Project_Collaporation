@@ -17,6 +17,7 @@ class CustomPlayerPlayBody extends StatelessWidget {
       width: double.infinity,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
+          stops: [5,4,3,2] ,
           colors: [
             AppColors.appBlack,
             AppColors.appGrey3,
