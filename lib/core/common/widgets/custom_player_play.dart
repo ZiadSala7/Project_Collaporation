@@ -1,6 +1,7 @@
 import 'package:cv_project_team/core/app/audio_cubit/audio_cubit.dart';
 import 'package:cv_project_team/core/app/audio_cubit/audio_state.dart';
 import 'package:cv_project_team/core/common/widgets/custom_player_play_body.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -42,7 +43,7 @@ class CustomPlayerPlay extends StatelessWidget {
                 startAnimation ? 0 : screenWidth, 0, 0),
             height: 50.h,
             alignment: Alignment.centerRight,
-            color: Colors.amber,
+            color: AppColors.appGrey3,
             margin: const EdgeInsets.all(8),
             // color:AppColors.secondryColor,
             duration: Duration(milliseconds: 300 + (index * 200)),

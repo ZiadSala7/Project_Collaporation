@@ -5,6 +5,7 @@ import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/common/widgets/custom_player_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomPlayerPlayBody extends StatelessWidget {
   const CustomPlayerPlayBody({super.key, required this.audioPath});
@@ -16,10 +17,12 @@ class CustomPlayerPlayBody extends StatelessWidget {
       width: double.infinity,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
+          stops: [5,4,3,2] ,
           colors: [
-            AppColors.mainColor,
-            AppColors.secondryColor,
-            Colors.white,
+            AppColors.appBlack,
+            AppColors.appGrey3,
+            AppColors.appGrey2,
+            AppColors.appGrey1,
           ],
           begin: Alignment(0.46, -0.89),
           end: Alignment(-0.46, 0.89),
@@ -29,6 +32,11 @@ class CustomPlayerPlayBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          CircleAvatar(
+            backgroundColor: AppColors.appGrey2,
+              backgroundImage:const AssetImage("assets/images/play.png") ,
+              radius: 100.sp,
+          ),
           Image.asset(
             AppImages.imagesSmile,
             fit: BoxFit.cover,
@@ -58,8 +66,8 @@ class CustomPlayerPlayBodySection extends StatelessWidget {
             value: audiocubit.currentPosition.inSeconds.toDouble(),
             min: 0,
             max: audiocubit.lengthDuration.inSeconds.toDouble(),
-            activeColor: AppColors.mainColor,
-            inactiveColor: AppColors.secondryColor,
+            activeColor: AppColors.appBlack,
+            inactiveColor: AppColors.appGrey1,
             onChanged: (value) {
               audiocubit.seekTo(value.toInt());
             },

@@ -13,7 +13,7 @@ class CustomPlayerIcon extends StatelessWidget {
       onPressed: onPressed,
       icon: Icon(
         icon,
-        color: AppColors.mainColor,
+        color: AppColors.appBlack,
         size: 32.sp,
       ),
     );
