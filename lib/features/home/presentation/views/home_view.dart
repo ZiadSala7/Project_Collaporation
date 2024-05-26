@@ -30,7 +30,6 @@ class HomeView extends StatelessWidget {
           titleSpacing: 2,
           centerTitle: true,
         ),
-        // body: const CustomSnappingEffect(),
         body: const HomeViewBody(),
       ),
     );
