@@ -3,22 +3,19 @@ import 'package:cv_project_team/core/common/animations/animate_do.dart';
 import 'package:cv_project_team/core/common/widgets/custom_linear_button.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/select_section_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class DetailsView extends StatefulWidget {
-  const DetailsView({super.key});
+class TwoButtonView extends StatelessWidget {
+  const TwoButtonView({super.key});
 
-  @override
-  State<DetailsView> createState() => _DetailsViewState();
-}
-
-class _DetailsViewState extends State<DetailsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.appGrey1,
       body: SizedBox(
         width: double.infinity,
         child: Column(
