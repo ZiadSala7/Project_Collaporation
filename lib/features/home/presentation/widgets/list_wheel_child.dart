@@ -11,6 +11,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class ListWheelChild extends StatelessWidget {
   const ListWheelChild({super.key, required this.index});
   final int index;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -25,21 +26,25 @@ class ListWheelChild extends StatelessWidget {
         }
       },
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20.w),
+        margin: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
         child: Card(
           elevation: 1.75.sp,
           child: ClipRRect(
-            borderRadius: const BorderRadius.all(Radius.circular(15)),
+            borderRadius: BorderRadius.all(Radius.circular(15.r)),
             child: Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomAppImage(imgPath: other(context)[index].imagePath),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
+                Padding(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
+                  child:
+                      CustomAppImage(imgPath: other(context)[index].imagePath),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8.0.w),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
                         other(context)[index].imageName,
                         style: Styless.textStyle24.copyWith(
                           decoration: other(context)[index].isLock
@@ -47,13 +52,11 @@ class ListWheelChild extends StatelessWidget {
                               : TextDecoration.none,
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 12.h,
-                    ),
-                    other(context)[index].icon
-                  ],
-                )
+                      
+                      other(context)[index].icon
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
