@@ -9,6 +9,7 @@ class SectionCardModels {
     required this.name,
     required this.imageUrl,
     required this.description,
+    required this.imgList,
   });
 
   final String id;
@@ -16,6 +17,7 @@ class SectionCardModels {
   final String imageUrl;
   final String description;
   final List<String> audioPath;
+  final List<String> imgList;
 
   SectionCardModels copyWith({
     String? id,
@@ -30,6 +32,7 @@ class SectionCardModels {
         imageUrl: imageUrl ?? this.imageUrl,
         description: description ?? this.description,
         audioPath: audioPath ?? this.audioPath,
+        imgList: this.imgList,
       );
 
   static List<SectionCardModels> fakeValues = [
@@ -105,6 +108,7 @@ final section = SectionCardModels(
   imageUrl: _imagesUrls[0],
   description: LangKeys.descriptionTheEntrance,
   audioPath: [Assets.audiosMdkhlAud],
+  imgList: [],
 );
 
 const _imagesUrls = [
