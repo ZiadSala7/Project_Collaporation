@@ -49,4 +49,6 @@ class LangKeys {
 
   static const String guideVideo = 'guideVideo';
   static const String startTour = 'begin';
+
+  static const String redMonasteryDescribtion = 'redMonasteryDescribtion';
 }

@@ -1,3 +1,4 @@
+import 'package:cv_project_team/core/common/models/sections_images_lists.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/audio/app_audio.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
@@ -9,7 +10,6 @@ class SectionCardModels {
     required this.name,
     required this.imageUrl,
     required this.description,
-    required this.imgList,
   });
 
   final String id;
@@ -17,7 +17,6 @@ class SectionCardModels {
   final String imageUrl;
   final String description;
   final List<String> audioPath;
-  final List<String> imgList;
 
   SectionCardModels copyWith({
     String? id,
@@ -25,6 +24,7 @@ class SectionCardModels {
     String? imageUrl,
     String? description,
     List<String>? audioPath,
+    List<String>? images,
   }) =>
       SectionCardModels(
         id: id ?? this.id,
@@ -32,7 +32,6 @@ class SectionCardModels {
         imageUrl: imageUrl ?? this.imageUrl,
         description: description ?? this.description,
         audioPath: audioPath ?? this.audioPath,
-        imgList: this.imgList,
       );
 
   static List<SectionCardModels> fakeValues = [
@@ -43,6 +42,7 @@ class SectionCardModels {
       imageUrl: _imagesUrls[1],
       description: LangKeys.descriptionTheFort,
       audioPath: [Assets.audiosMdkhlAud],
+      images: ImageClass().alHesn,
     ),
     section.copyWith(
       id: '3',
@@ -50,6 +50,7 @@ class SectionCardModels {
       imageUrl: _imagesUrls[2],
       description: LangKeys.descriptionTableHall,
       audioPath: [Assets.audiosMaaedaAud],
+      images: ImageClass().salatAlmaaeda,
     ),
     section.copyWith(
       id: '4',
@@ -57,6 +58,7 @@ class SectionCardModels {
       imageUrl: _imagesUrls[3],
       description: LangKeys.descriptionSouthTempleRoom,
       audioPath: [Assets.audiosShklAud],
+      images: ImageClass().southHekal,
     ),
     section.copyWith(
         id: '5',
@@ -108,7 +110,6 @@ final section = SectionCardModels(
   imageUrl: _imagesUrls[0],
   description: LangKeys.descriptionTheEntrance,
   audioPath: [Assets.audiosMdkhlAud],
-  imgList: [],
 );
 
 const _imagesUrls = [

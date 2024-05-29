@@ -1,4 +1,3 @@
-
 import 'dart:ui';
 
 import 'package:cv_project_team/core/common/models/section_model.dart';
@@ -6,7 +5,7 @@ import 'package:cv_project_team/features/section_details/presentation/view/detai
 import 'package:cv_project_team/features/select_section/persentation/widgets/animated_shimmer_arrow.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/background_section_card.dart';
 import 'package:cv_project_team/features/select_section/persentation/widgets/parallax_image_card.dart';
-import 'package:cv_project_team/features/select_section/persentation/widgets/vertical_section_title.dart';
+import 'package:cv_project_team/features/select_section/persentation/widgets/horizental_section_title.dart';
 import 'package:flutter/material.dart';
 
 class SectionCard extends StatelessWidget {
@@ -29,7 +28,6 @@ class SectionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 200),
       curve: Curves.fastOutSlowIn,
@@ -86,7 +84,7 @@ class SectionCard extends StatelessWidget {
                         imageUrl: section.imageUrl,
                         parallaxValue: percent,
                       ),
-                      VerticalSectionTitle(
+                      HorizentalSectionTitle(
                         title: section.name,
                       ),
                       const AnimatedUpwardArrows()
