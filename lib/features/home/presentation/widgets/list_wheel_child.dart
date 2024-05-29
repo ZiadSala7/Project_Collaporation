@@ -34,8 +34,7 @@ class ListWheelChild extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
+                  padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
                   child:
                       CustomAppImage(imgPath: other(context)[index].imagePath),
                 ),
@@ -50,9 +49,11 @@ class ListWheelChild extends StatelessWidget {
                           decoration: other(context)[index].isLock
                               ? TextDecoration.lineThrough
                               : TextDecoration.none,
+                          color: other(context)[index].isLock
+                              ? Colors.grey
+                              : Colors.black,
                         ),
                       ),
-                      
                       other(context)[index].icon
                     ],
                   ),
