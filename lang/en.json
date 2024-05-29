@@ -14,7 +14,7 @@
   "others6" : "Alshohadaa Monastery",
   "redDer" : "Red Monistry",
 
-  "theEntrance": "the Entrance",
+  "theEntrance": "The Entrance",
   "descriptionTheEntrance": "A small door opening leading to a sink containing a basin or basin covered with glass, such as a wash basin. The entrance is made of stones taken from Pharaonic antiquities, and it is one of the oldest parts of the monastery ",
 
   "theFort":"The Fort",
@@ -50,5 +50,7 @@
   "videos": "Videos",
   
   "guideVideo" : "Guide video",
-  "begin" : "Start yout tour"
+  "begin" : "Start yout tour",
+
+  "redMonasteryDescribtion": "The Red Monastery is one of the greatest Coptic monuments and was built in the style of the Church of the Holy Sepulchre and the monastery is attributed to Alenba Bijul and Alnaba Tea has been called the Red Monastery built of red bricks and the Church of the Red Monastery is the first church in Egypt and the Mediterranean basin in terms of the amount of icons where the icons cover 80% of the structure"
 }

@@ -4,7 +4,7 @@ import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/styles/snaping%20effect/snap_model.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
-import 'package:cv_project_team/features/select_section/persentation/view/two_button_view.dart';
+import 'package:cv_project_team/features/select_section/persentation/view/red_monastry_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,7 +20,7 @@ class ListWheelChild extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const TwoButtonView(),
+              builder: (context) => const RedMonistaryView(),
             ),
           );
         }
