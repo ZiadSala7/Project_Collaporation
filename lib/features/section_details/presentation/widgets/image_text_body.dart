@@ -24,7 +24,10 @@ class ImageTextBody extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const ImageViewDetails();
+                      return ImageViewDetails(
+                        index: index,
+                        images: section.images,
+                      );
                     }));
                   },
                   child: CustomAppImage(imgPath: section.images[index]),
