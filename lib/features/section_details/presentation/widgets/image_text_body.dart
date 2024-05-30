@@ -15,24 +15,18 @@ class ImageTextBody extends StatelessWidget {
     final local = AppLocalizations.of(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 10,
-      ),
-      child: Center(
-        child: ListView(
-          children: [
-            Text(local!.translate(LangKeys.textAndImages).toString()),
-            SizedBox(height: 20.h),
-            const CustomAppImage(imgPath: AppImages.imagesOutsideDerOut1),
-            SizedBox(height: 20.h),
-            const CustomAppImage(imgPath: AppImages.imagesAlhesnH22),
-            SizedBox(height: 20.h),
-            const CustomAppImage(
-                imgPath: AppImages.imagesAlHekalEastHenyaLevel1Elevel11),
-            SizedBox(height: 20.h),
-          ],
+        padding: const EdgeInsets.symmetric(
+          horizontal: 10,
         ),
-      ),
-    );
+        child: ListView.builder(
+            itemCount: section.images.length,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  section.images[index],
+                ),
+              );
+            }));
   }
 }

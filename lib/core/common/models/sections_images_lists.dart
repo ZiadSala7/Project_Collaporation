@@ -1,5 +1,5 @@
 import 'package:cv_project_team/core/styles/image/app_images.dart';
-
+class ImageClass{
 List<String> alHesn = [
   AppImages.imagesAlhesnH1,
   AppImages.imagesAlhesnH2,
@@ -83,15 +83,6 @@ List<String> alSahn = [
   AppImages.imagesAlsahnS23,
 ];
 
-List<String> outsideDer = [
-  AppImages.imagesOutsideDerOut1,
-  AppImages.imagesOutsideDerOut2,
-  AppImages.imagesOutsideDerOut3,
-  AppImages.imagesOutsideDerOut4,
-  AppImages.imagesOutsideDerOut5,
-  AppImages.imagesOutsideDerOut6,
-  AppImages.imagesOutsideDerOut7,
-];
 
 List<String> oldKhoras = [
   AppImages.imagesSalatAlmaaedaMaaeda1,
@@ -150,3 +141,4 @@ List<String> azraa = [
   AppImages.imagesAzraaAz4,
   AppImages.imagesAzraaAz5,
 ];
+}
