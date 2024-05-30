@@ -4,20 +4,19 @@ import 'package:cv_project_team/core/styles/audio/app_audio.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 
 class SectionCardModels {
-  SectionCardModels(
-      {required this.audioPath,
-      required this.id,
-      required this.name,
-      required this.imageUrl,
-      required this.description,
-      required this.images});
+  SectionCardModels({
+    required this.audioPath,
+    required this.id,
+    required this.name,
+    required this.imageUrl,
+    required this.description,
+  });
 
   final String id;
   final String name;
   final String imageUrl;
   final String description;
   final List<String> audioPath;
-  final List<String> images;
 
   SectionCardModels copyWith({
     String? id,
@@ -33,7 +32,6 @@ class SectionCardModels {
         imageUrl: imageUrl ?? this.imageUrl,
         description: description ?? this.description,
         audioPath: audioPath ?? this.audioPath,
-        images: images ?? this.images,
       );
 
   static List<SectionCardModels> fakeValues = [
@@ -116,7 +114,6 @@ final section = SectionCardModels(
   imageUrl: _imagesUrls[0],
   description: LangKeys.descriptionTheEntrance,
   audioPath: [Assets.audiosMdkhlAud],
-  images: ImageClass().alMadkhal,
 );
 
 const _imagesUrls = [
