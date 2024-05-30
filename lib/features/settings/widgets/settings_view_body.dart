@@ -16,25 +16,26 @@ class SettingsViewBdy extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AppCubit, AppState>(builder: (context, state) {
-      final appCubit = context.read<AppCubit>();
-      return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.w),
-        child: Column(
-          children: [
-            SizedBox(height: 20.h),
-            CustomFadeInDown(
-              duration: animationDuration,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    AppLocalizations.of(context)!
-                        .translate(LangKeys.changeLang)
-                        .toString(),
-                    style: Styless.textStyle28,
-                  ),
-                  CustomLinearButton(
+    return BlocBuilder<AppCubit, AppState>(
+      builder: (context, state) {
+        final appCubit = context.read<AppCubit>();
+        return Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.w),
+          child: Column(
+            children: [
+              SizedBox(height: 20.h),
+              CustomFadeInDown(
+                duration: animationDuration,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      AppLocalizations.of(context)!
+                          .translate(LangKeys.changeLang)
+                          .toString(),
+                      style: Styless.textStyle28,
+                    ),
+                    CustomLinearButton(
                       onPressed: () {
                         appCubit.currentLanguageCode == 'en'
                             ? appCubit.toArabic()
@@ -47,18 +48,17 @@ class SettingsViewBdy extends StatelessWidget {
                             .translate(LangKeys.language)
                             .toString(),
                         style: Styless.textStyle28.copyWith(
-                          fontFamily: FontFamilyHelper.getLocalizedFamily() ==
-                                  FontFamilyHelper.cairoArabic
-                              ? FontFamilyHelper.rakkasEnglish
-                              : FontFamilyHelper.cairoArabic,
+                          fontFamily: FontFamilyHelper.getLocalizedFamily(),
                         ),
-                      ))
-                ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),
-          ],
-        ),
-      );
-    });
+            ],
+          ),
+        );
+      },
+    );
   }
 }

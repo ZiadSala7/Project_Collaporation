@@ -105,18 +105,10 @@ flutter:
   # example:
   fonts:
     # Arabic Font
-    - family: Cairo
+    - family: ArEn
       fonts:
-        - asset: assets/fonts/arabic/cairo/Cairo-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/arabic/cairo/Cairo-Medium.ttf
+        - asset: assets/fonts/XB NiloofarBd.ttf
           weight: 500
-        - asset: assets/fonts/arabic/cairo/Cairo-Regular.ttf
-          weight: 400
-    # English Font
-    - family: Rakkas
-      fonts:
-        - asset: assets/fonts/Rakkas-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 # using 'flutter Assets Gen' extetion
