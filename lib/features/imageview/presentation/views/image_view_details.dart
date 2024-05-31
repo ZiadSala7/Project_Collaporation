@@ -35,17 +35,18 @@ class _ImageViewDetailsState extends State<ImageViewDetails> {
                 );
               }),
           Padding(
-            padding: EdgeInsets.only(left: 16.w, top: 16.h),
+            padding: EdgeInsets.only(right: 18.w, top: 18.h),
             child: IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.white,
-                  size: 22.sp,
-                )),
-          )
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.white,
+                size: 22.sp,
+              ),
+            ),
+          ),
         ],
       ),
     );

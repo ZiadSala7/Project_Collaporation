@@ -9,6 +9,7 @@ import 'package:cv_project_team/features/about/presentation/about_view.dart';
 import 'package:cv_project_team/features/home/presentation/views/home_view.dart';
 import 'package:cv_project_team/features/settings/settings_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -20,19 +21,24 @@ class CustomDrawer extends StatelessWidget {
       child: Drawer(
         child: Column(
           children: [
-            const UserAccountsDrawerHeader(
+             const UserAccountsDrawerHeader(
               accountName: Text(''),
               accountEmail: Text(''),
               decoration: BoxDecoration(
-                  color: AppColors.mainColor,
-                  image: DecorationImage(
-                      image: AssetImage(AppImages.imagesTurath))),
+                color: AppColors.mainColor,
+                image: DecorationImage(
+                  image: AssetImage(AppImages.imagesTurath),
+                ),
+              ),
             ),
             CustomListTile(
               text: AppLocalizations.of(context)!
                   .translate(LangKeys.home)
                   .toString(),
-              icon: const Icon(Icons.home),
+              icon: Icon(
+                Icons.home,
+                size: 28.sp,
+              ),
               onTap: () {
                 Navigator.pushAndRemoveUntil(
                   context,
@@ -47,28 +53,36 @@ class CustomDrawer extends StatelessWidget {
               text: AppLocalizations.of(context)!
                   .translate(LangKeys.settings)
                   .toString(),
-              icon: const Icon(Icons.settings),
+              icon: Icon(
+                Icons.settings,
+                size: 28.sp,
+              ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SettingsView(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SettingsView(),
+                  ),
+                );
               },
             ),
             CustomListTile(
               text: AppLocalizations.of(context)!
                   .translate(LangKeys.about)
                   .toString(),
-              icon: const Icon(Icons.info),
+              icon: Icon(
+                Icons.info,
+                size: 28.sp,
+              ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AboutView(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AboutView(),
+                  ),
+                );
               },
             ),
           ],
