@@ -17,7 +17,7 @@ class HikalView extends StatelessWidget {
         children: [
           CustomHikalSectionCard(
             title: 'General',
-            imagePath: AppImages.,
+            imagePath: ,
           ),
         ]
       ),
