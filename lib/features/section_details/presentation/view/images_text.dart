@@ -10,7 +10,7 @@ class ImagesText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: section.id == '5'
-            ? const HikalView()
+            ? HikalView(section: section,)
             : ImageTextBody(
                 section: section,
               ));

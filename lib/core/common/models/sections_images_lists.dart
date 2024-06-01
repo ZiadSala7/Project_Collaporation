@@ -147,14 +147,14 @@ class ImageClass {
     // level 1
     AppImages.imagesAlHekalEastHenyaLevel1Elevel11,
     AppImages.imagesAlHekalEastHenyaLevel1Elevel12,
-    // level 2
+    // level 2 3
     AppImages.imagesAlHekalEastHenyaLevel2Elevel21,
     AppImages.imagesAlHekalEastHenyaLevel2Elevel22,
     AppImages.imagesAlHekalEastHenyaLevel2Elevel23,
     AppImages.imagesAlHekalEastHenyaLevel2Elevel24,
     AppImages.imagesAlHekalEastHenyaLevel2Elevel25,
     AppImages.imagesAlHekalEastHenyaLevel2Elevel26,
-    // Quba
+    // Quba  8
     AppImages.imagesAlHekalEastHenyaQubaQb1,
     AppImages.imagesAlHekalEastHenyaQubaQb2,
     AppImages.imagesAlHekalEastHenyaQubaQb3,
@@ -164,7 +164,7 @@ class ImageClass {
     AppImages.imagesAlHekalEastHenyaQubaQb7,
     AppImages.imagesAlHekalEastHenyaQubaQb8,
     AppImages.imagesAlHekalEastHenyaQubaQb9,
-    // east others
+    // east others  17
     AppImages.imagesAlHekalEastHenyaPp1,
     AppImages.imagesAlHekalEastHenyaPp2,
     AppImages.imagesAlHekalEastHenyaPp3,
@@ -174,7 +174,7 @@ class ImageClass {
     AppImages.imagesAlHekalEastHenyaPp7,
     // end East
     // North Hekal
-    // level 1
+    // level 1  24
     AppImages.imagesAlHekalNorthHenyaLevel1Lvl11,
     AppImages.imagesAlHekalNorthHenyaLevel1Lvl12,
     AppImages.imagesAlHekalNorthHenyaLevel1Lvl13,
@@ -182,7 +182,7 @@ class ImageClass {
     AppImages.imagesAlHekalNorthHenyaLevel1Lvl15,
     AppImages.imagesAlHekalNorthHenyaLevel1Lvl16,
     AppImages.imagesAlHekalNorthHenyaLevel1Lvl17,
-    // level 2
+    // level 2  31
     AppImages.imagesAlHekalNorthHenyaLevel2Lvl21,
     AppImages.imagesAlHekalNorthHenyaLevel2Lvl22,
     AppImages.imagesAlHekalNorthHenyaLevel2Lvl23,
@@ -190,12 +190,12 @@ class ImageClass {
     AppImages.imagesAlHekalNorthHenyaLevel2Lvl25,
     AppImages.imagesAlHekalNorthHenyaLevel2Lvl26,
     AppImages.imagesAlHekalNorthHenyaLevel2Lvl27,
-    // Quba
+    // Quba  38
     AppImages.imagesAlHekalNorthHenyaQubaQba1,
     AppImages.imagesAlHekalNorthHenyaQubaQba2,
     AppImages.imagesAlHekalNorthHenyaQubaQba3,
     AppImages.imagesAlHekalNorthHenyaQubaQba4,
-    // North others
+    // North others  42
     AppImages.imagesAlHekalNorthHenya1,
     AppImages.imagesAlHekalNorthHenya2,
     AppImages.imagesAlHekalNorthHenya3,
@@ -203,31 +203,31 @@ class ImageClass {
     AppImages.imagesAlHekalNorthHenya5,
     // end North
     // South Hekal
-    // level 1
+    // level 1  47
     AppImages.imagesAlHekalSouthHenyaLevel1Levl11,
     AppImages.imagesAlHekalSouthHenyaLevel1Levl12,
     AppImages.imagesAlHekalSouthHenyaLevel1Levl13,
     AppImages.imagesAlHekalSouthHenyaLevel1Levl14,
     AppImages.imagesAlHekalSouthHenyaLevel1Levl15,
     AppImages.imagesAlHekalSouthHenyaLevel1Levl16,
-    // level 2
+    // level 2  53
     AppImages.imagesAlHekalSouthHenyaLevel2Levl21,
     AppImages.imagesAlHekalSouthHenyaLevel2Levl22,
     AppImages.imagesAlHekalSouthHenyaLevel2Levl23,
     AppImages.imagesAlHekalSouthHenyaLevel2Levl24,
     AppImages.imagesAlHekalSouthHenyaLevel2Levl25,
-    // Quba
+    // Quba  58
     AppImages.imagesAlHekalSouthHenyaQubaQ1,
     AppImages.imagesAlHekalSouthHenyaQubaQ2,
     AppImages.imagesAlHekalSouthHenyaQubaQ3,
     AppImages.imagesAlHekalSouthHenyaQubaQ4,
-    // South others
+    // South others  62
     AppImages.imagesAlHekalSouthHenyaP1,
     AppImages.imagesAlHekalSouthHenyaP2,
     AppImages.imagesAlHekalSouthHenyaP3,
     AppImages.imagesAlHekalSouthHenyaP4,
     // end South
-    // hekal others
+    // hekal others 66
     AppImages.imagesAlHekalPh1,
     AppImages.imagesAlHekalPh2,
     AppImages.imagesAlHekalPh3,
