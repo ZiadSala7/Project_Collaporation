@@ -141,105 +141,105 @@ class ImageClass {
     AppImages.imagesAzraaAz4,
     AppImages.imagesAzraaAz5,
   ];
-}
 
-List<String> alHekal = [
-  // East Hekal
-  // level 1
-  AppImages.imagesAlHekalEastHenyaLevel1Elevel11,
-  AppImages.imagesAlHekalEastHenyaLevel1Elevel12,
-  // level 2
-  AppImages.imagesAlHekalEastHenyaLevel2Elevel21,
-  AppImages.imagesAlHekalEastHenyaLevel2Elevel22,
-  AppImages.imagesAlHekalEastHenyaLevel2Elevel23,
-  AppImages.imagesAlHekalEastHenyaLevel2Elevel24,
-  AppImages.imagesAlHekalEastHenyaLevel2Elevel25,
-  AppImages.imagesAlHekalEastHenyaLevel2Elevel26,
-  // Quba
-  AppImages.imagesAlHekalEastHenyaQubaQb1,
-  AppImages.imagesAlHekalEastHenyaQubaQb2,
-  AppImages.imagesAlHekalEastHenyaQubaQb3,
-  AppImages.imagesAlHekalEastHenyaQubaQb4,
-  AppImages.imagesAlHekalEastHenyaQubaQb5,
-  AppImages.imagesAlHekalEastHenyaQubaQb6,
-  AppImages.imagesAlHekalEastHenyaQubaQb7,
-  AppImages.imagesAlHekalEastHenyaQubaQb8,
-  AppImages.imagesAlHekalEastHenyaQubaQb9,
-  // east others
-  AppImages.imagesAlHekalEastHenyaPp1,
-  AppImages.imagesAlHekalEastHenyaPp2,
-  AppImages.imagesAlHekalEastHenyaPp3,
-  AppImages.imagesAlHekalEastHenyaPp4,
-  AppImages.imagesAlHekalEastHenyaPp5,
-  AppImages.imagesAlHekalEastHenyaPp6,
-  AppImages.imagesAlHekalEastHenyaPp7,
-  // end East
-  // North Hekal
-  // level 1
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl11,
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl12,
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl13,
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl14,
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl15,
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl16,
-  AppImages.imagesAlHekalNorthHenyaLevel1Lvl17,
-  // level 2
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl21,
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl22,
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl23,
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl24,
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl25,
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl26,
-  AppImages.imagesAlHekalNorthHenyaLevel2Lvl27,
-  // Quba
-  AppImages.imagesAlHekalNorthHenyaQubaQba1,
-  AppImages.imagesAlHekalNorthHenyaQubaQba2,
-  AppImages.imagesAlHekalNorthHenyaQubaQba3,
-  AppImages.imagesAlHekalNorthHenyaQubaQba4,
-  // North others
-  AppImages.imagesAlHekalNorthHenya1,
-  AppImages.imagesAlHekalNorthHenya2,
-  AppImages.imagesAlHekalNorthHenya3,
-  AppImages.imagesAlHekalNorthHenya4,
-  AppImages.imagesAlHekalNorthHenya5,
-  // end North
-  // South Hekal
-  // level 1
-  AppImages.imagesAlHekalSouthHenyaLevel1Levl11,
-  AppImages.imagesAlHekalSouthHenyaLevel1Levl12,
-  AppImages.imagesAlHekalSouthHenyaLevel1Levl13,
-  AppImages.imagesAlHekalSouthHenyaLevel1Levl14,
-  AppImages.imagesAlHekalSouthHenyaLevel1Levl15,
-  AppImages.imagesAlHekalSouthHenyaLevel1Levl16,
-  // level 2
-  AppImages.imagesAlHekalSouthHenyaLevel2Levl21,
-  AppImages.imagesAlHekalSouthHenyaLevel2Levl22,
-  AppImages.imagesAlHekalSouthHenyaLevel2Levl23,
-  AppImages.imagesAlHekalSouthHenyaLevel2Levl24,
-  AppImages.imagesAlHekalSouthHenyaLevel2Levl25,
-  // Quba
-  AppImages.imagesAlHekalSouthHenyaQubaQ1,
-  AppImages.imagesAlHekalSouthHenyaQubaQ2,
-  AppImages.imagesAlHekalSouthHenyaQubaQ3,
-  AppImages.imagesAlHekalSouthHenyaQubaQ4,
-  // South others
-  AppImages.imagesAlHekalSouthHenyaP1,
-  AppImages.imagesAlHekalSouthHenyaP2,
-  AppImages.imagesAlHekalSouthHenyaP3,
-  AppImages.imagesAlHekalSouthHenyaP4,
-  // end South
-  // hekal others
-  AppImages.imagesAlHekalPh1,
-  AppImages.imagesAlHekalPh2,
-  AppImages.imagesAlHekalPh3,
-  AppImages.imagesAlHekalPh4,
-  AppImages.imagesAlHekalPh5,
-  AppImages.imagesAlHekalPh6,
-  AppImages.imagesAlHekalPh7,
-  AppImages.imagesAlHekalPh8,
-  AppImages.imagesAlHekalPh9,
-  AppImages.imagesAlHekalPh10,
-  AppImages.imagesAlHekalPh11,
-  AppImages.imagesAlHekalPh12,
-  // end Hekal
-];
+  List<String> alHekal = [
+    // East Hekal
+    // level 1
+    AppImages.imagesAlHekalEastHenyaLevel1Elevel11,
+    AppImages.imagesAlHekalEastHenyaLevel1Elevel12,
+    // level 2
+    AppImages.imagesAlHekalEastHenyaLevel2Elevel21,
+    AppImages.imagesAlHekalEastHenyaLevel2Elevel22,
+    AppImages.imagesAlHekalEastHenyaLevel2Elevel23,
+    AppImages.imagesAlHekalEastHenyaLevel2Elevel24,
+    AppImages.imagesAlHekalEastHenyaLevel2Elevel25,
+    AppImages.imagesAlHekalEastHenyaLevel2Elevel26,
+    // Quba
+    AppImages.imagesAlHekalEastHenyaQubaQb1,
+    AppImages.imagesAlHekalEastHenyaQubaQb2,
+    AppImages.imagesAlHekalEastHenyaQubaQb3,
+    AppImages.imagesAlHekalEastHenyaQubaQb4,
+    AppImages.imagesAlHekalEastHenyaQubaQb5,
+    AppImages.imagesAlHekalEastHenyaQubaQb6,
+    AppImages.imagesAlHekalEastHenyaQubaQb7,
+    AppImages.imagesAlHekalEastHenyaQubaQb8,
+    AppImages.imagesAlHekalEastHenyaQubaQb9,
+    // east others
+    AppImages.imagesAlHekalEastHenyaPp1,
+    AppImages.imagesAlHekalEastHenyaPp2,
+    AppImages.imagesAlHekalEastHenyaPp3,
+    AppImages.imagesAlHekalEastHenyaPp4,
+    AppImages.imagesAlHekalEastHenyaPp5,
+    AppImages.imagesAlHekalEastHenyaPp6,
+    AppImages.imagesAlHekalEastHenyaPp7,
+    // end East
+    // North Hekal
+    // level 1
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl11,
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl12,
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl13,
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl14,
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl15,
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl16,
+    AppImages.imagesAlHekalNorthHenyaLevel1Lvl17,
+    // level 2
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl21,
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl22,
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl23,
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl24,
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl25,
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl26,
+    AppImages.imagesAlHekalNorthHenyaLevel2Lvl27,
+    // Quba
+    AppImages.imagesAlHekalNorthHenyaQubaQba1,
+    AppImages.imagesAlHekalNorthHenyaQubaQba2,
+    AppImages.imagesAlHekalNorthHenyaQubaQba3,
+    AppImages.imagesAlHekalNorthHenyaQubaQba4,
+    // North others
+    AppImages.imagesAlHekalNorthHenya1,
+    AppImages.imagesAlHekalNorthHenya2,
+    AppImages.imagesAlHekalNorthHenya3,
+    AppImages.imagesAlHekalNorthHenya4,
+    AppImages.imagesAlHekalNorthHenya5,
+    // end North
+    // South Hekal
+    // level 1
+    AppImages.imagesAlHekalSouthHenyaLevel1Levl11,
+    AppImages.imagesAlHekalSouthHenyaLevel1Levl12,
+    AppImages.imagesAlHekalSouthHenyaLevel1Levl13,
+    AppImages.imagesAlHekalSouthHenyaLevel1Levl14,
+    AppImages.imagesAlHekalSouthHenyaLevel1Levl15,
+    AppImages.imagesAlHekalSouthHenyaLevel1Levl16,
+    // level 2
+    AppImages.imagesAlHekalSouthHenyaLevel2Levl21,
+    AppImages.imagesAlHekalSouthHenyaLevel2Levl22,
+    AppImages.imagesAlHekalSouthHenyaLevel2Levl23,
+    AppImages.imagesAlHekalSouthHenyaLevel2Levl24,
+    AppImages.imagesAlHekalSouthHenyaLevel2Levl25,
+    // Quba
+    AppImages.imagesAlHekalSouthHenyaQubaQ1,
+    AppImages.imagesAlHekalSouthHenyaQubaQ2,
+    AppImages.imagesAlHekalSouthHenyaQubaQ3,
+    AppImages.imagesAlHekalSouthHenyaQubaQ4,
+    // South others
+    AppImages.imagesAlHekalSouthHenyaP1,
+    AppImages.imagesAlHekalSouthHenyaP2,
+    AppImages.imagesAlHekalSouthHenyaP3,
+    AppImages.imagesAlHekalSouthHenyaP4,
+    // end South
+    // hekal others
+    AppImages.imagesAlHekalPh1,
+    AppImages.imagesAlHekalPh2,
+    AppImages.imagesAlHekalPh3,
+    AppImages.imagesAlHekalPh4,
+    AppImages.imagesAlHekalPh5,
+    AppImages.imagesAlHekalPh6,
+    AppImages.imagesAlHekalPh7,
+    AppImages.imagesAlHekalPh8,
+    AppImages.imagesAlHekalPh9,
+    AppImages.imagesAlHekalPh10,
+    AppImages.imagesAlHekalPh11,
+    AppImages.imagesAlHekalPh12,
+    // end Hekal
+  ];
+}

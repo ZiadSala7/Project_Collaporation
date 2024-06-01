@@ -73,6 +73,7 @@ class SectionCardModels {
         Assets.audiosEastHenyaAudios,
         Assets.audiosNorthHenyaAudios
       ],
+      images: ImageClass().alHekal,
     ),
     section.copyWith(
       id: '6',
