@@ -11,28 +11,47 @@ class ImageTextBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: 16.w,
-          vertical: 15.h,
-        ),
-        child: ListView.builder(
-            itemCount: section.images.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: EdgeInsets.only(bottom: 8.h),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return ImageViewDetails(
-                        index: index,
-                        images: section.images,
-                      );
-                    }));
-                  },
-                  child: CustomAppImage(imgPath: section.images[index]),
-                ),
-              );
-            }));
+      padding: EdgeInsets.symmetric(
+        horizontal: 16.w,
+        vertical: 16.h,
+      ),
+      child: GridView.count(
+          physics: BouncingScrollPhysics(),
+          crossAxisCount: 3,
+          crossAxisSpacing: 8.w,
+          mainAxisSpacing: 8.h,
+          childAspectRatio: 5 / 7,
+          children: List.generate(section.images.length, (index) {
+            return ShowImage(
+              index: index,
+              section: section,
+            );
+          })),
+    );
+  }
+}
+
+class ShowImage extends StatelessWidget {
+  const ShowImage({
+    super.key,
+    required this.section,
+    required this.index,
+  });
+  final int index;
+  final SectionCardModels section;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return ImageViewDetails(
+            index: index,
+            images: section.images,
+          );
+        }));
+      },
+      child: CustomAppImage(imgPath: section.images[index]),
+    );
   }
 }

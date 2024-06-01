@@ -32,7 +32,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
       // backgroundColor: mobileBackgroundColor,
       bottomNavigationBar: CupertinoTabBar(
         height: 55.h,
-        backgroundColor: AppColors.appBlack,
+        backgroundColor: AppColors.appGrey2,
         onTap: (index) {
           _pageController.jumpToPage(index);
           setState(() {
@@ -44,7 +44,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             icon: Icon(
               Icons.image_rounded,
               size: 30.sp,
-              color: pageIndex == 0 ? Colors.amberAccent : Colors.white,
+              color: pageIndex == 0 ? Colors.black : Colors.white,
             ),
             label: local!.translate(LangKeys.textAndImages).toString(),
           ),
@@ -52,7 +52,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             icon: Icon(
               Icons.audiotrack_rounded,
               size: 30.sp,
-              color: pageIndex == 1 ? Colors.amber : Colors.white,
+              color: pageIndex == 1 ? Colors.black : Colors.white,
             ),
             label: local.translate(LangKeys.audios).toString(),
           ),

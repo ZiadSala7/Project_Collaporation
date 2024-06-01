@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/core/common/widgets/custom_drawer.dart';
 import 'package:cv_project_team/features/section_details/presentation/widgets/details_view_body.dart';
@@ -15,6 +16,7 @@ class DetailsView extends StatelessWidget {
       child: Scaffold(
         drawer: const CustomDrawer(),
         appBar: AppBar(
+          backgroundColor: AppColors.appGrey2,
           title: Text(
             AppLocalizations.of(context)!.translate(section.name).toString(),
             style: Styless.textStyle28,
