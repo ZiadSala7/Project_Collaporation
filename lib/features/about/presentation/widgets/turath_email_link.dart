@@ -15,7 +15,7 @@ class TurathEmailLink extends StatelessWidget {
 
     final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
-      path: 'torath831@gmail.com',
+      path: 'Turath831@gmail.com',
       query: encodeQueryParameters(<String, String>{
         'subject': 'Example Subject & Symbols are allowed!',
       }),
@@ -30,11 +30,11 @@ class TurathEmailLink extends StatelessWidget {
       child: InkWell(
         onTap: launchEmail,
         child: Text(
-          "torath831@gmail.com",
+          "Send Email to Team",
           style: Styless.textStyle24.copyWith(
             color: Colors.blue,
             decoration: TextDecoration.underline,
-            fontFamily: 'Rakkas',
+            fontFamily: 'ArEn',
           ),
         ),
       ),
