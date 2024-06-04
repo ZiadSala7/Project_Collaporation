@@ -1,5 +1,3 @@
-import 'package:cv_project_team/core/common/models/section_model.dart';
-import 'package:cv_project_team/features/section_details/presentation/view/hikal_view.dart';
 import 'package:cv_project_team/features/section_details/presentation/widgets/image_text_body.dart';
 import 'package:flutter/material.dart';
 

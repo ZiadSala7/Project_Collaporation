@@ -1,4 +1,3 @@
-import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/common/widgets/custom_app_image.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/image_view_details.dart';
 import 'package:flutter/material.dart';
