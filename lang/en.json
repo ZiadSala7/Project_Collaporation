@@ -48,9 +48,17 @@
   "textAndImages": "Text and images",
   "audios": "Audios",
   "videos": "Videos",
+  "description" : "description",
   
   "guideVideo" : "Guide video",
   "begin" : "Start yout tour",
 
-  "redMonasteryDescribtion": "The Red Monastery is one of the greatest Coptic monuments and was built in the style of the Church of the Holy Sepulchre and the monastery is attributed to Alenba Bijul and Alnaba Tea has been called the Red Monastery built of red bricks and the Church of the Red Monastery is the first church in Egypt and the Mediterranean basin in terms of the amount of icons where the icons cover 80% of the structure"
+  "redMonasteryDescribtion": "The Red Monastery is one of the greatest Coptic monuments and was built in the style of the Church of the Holy Sepulchre and the monastery is attributed to Alenba Bijul and Alnaba Tea has been called the Red Monastery built of red bricks and the Church of the Red Monastery is the first church in Egypt and the Mediterranean basin in terms of the amount of icons where the icons cover 80% of the structure",
+
+  
+  "almadkhal" : "A small doorway leads to a vestibule with a basin or a pool covered with glass, known as the 'washing basin'. It was customary in monasteries to welcome visitors to the church and wash their feet. The entrance is built of stone and is one of the oldest parts of the monastery, dating back to 500 AD. The stones were taken from the ancient Pharaonic city that existed before the monastery. When they took the stones, they decorated them with plant motifs such as the acanthus flower. These stones still retain the ancient Pharaonic inscriptions to this day.",
+  "alhesn" : "It is built perpendicular to the church and accessed through two doors in the vestibule of the entrance. It is attributed to Queen Helena, the mother of Emperor Constantine the Great, who ordered its construction to protect the monks from barbarian attacks. A sharp-eyed monk would stand atop the fortress to keep watch, and upon seeing any danger, he would ring the bell, causing the monks to gather in the fortress until the danger passed. The fortress contains a well for drinking water, a place to store provisions and food, and a basin that, for a long period, people would fill with water and immerse themselves in during the Feast of the Epiphany. Currently, the lower rooms house some artifacts found in the monastery, as well as pictures of the stages of the monastery's restoration and of travelers who came to visit it."
+  
+
+
 }

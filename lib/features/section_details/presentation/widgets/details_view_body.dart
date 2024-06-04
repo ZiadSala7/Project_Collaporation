@@ -3,6 +3,7 @@ import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/audio_screen.dart';
+import 'package:cv_project_team/features/section_details/presentation/view/description_screen.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/images_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -56,6 +57,14 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             ),
             label: local.translate(LangKeys.audios).toString(),
           ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.description,
+              size: 30.sp,
+              color: pageIndex == 2 ? Colors.black : Colors.white,
+            ),
+            label: local.translate(LangKeys.decription).toString(),
+          ),
         ],
       ),
       body: PageView(
@@ -67,6 +76,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
             section: widget.section,
           ),
           AudioScreen(
+            section: widget.section,
+          ),
+          DescriptionScreen(
             section: widget.section,
           ),
         ],
