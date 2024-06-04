@@ -79,7 +79,7 @@ class CustomHikalSectionCard extends StatelessWidget {
           children: [
             Image.asset(
               imagePath,
-              height: 150.h,
+              height: 145.h,
               width: 150.w,
               fit: BoxFit.fill,
             ),
