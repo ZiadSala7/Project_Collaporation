@@ -15,7 +15,7 @@ class HikalView extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 15.h,
           crossAxisSpacing: 15.w,
-          childAspectRatio: 7.sp,
+          childAspectRatio: .7.h,
           children: [
             CustomHikalSectionCard(
               title: 'General',
@@ -70,9 +70,9 @@ class CustomHikalSectionCard extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.1),
-                spreadRadius: 1,
-                blurRadius: 1,
-                offset: const Offset(0, 1),
+                spreadRadius: 1.w,
+                blurRadius: 1.w,
+                offset: Offset(0, 1.h),
               )
             ]),
         child: Column(
