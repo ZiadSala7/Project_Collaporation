@@ -1,6 +1,5 @@
 import 'package:cv_project_team/core/app/audio_cubit/audio_cubit.dart';
 import 'package:cv_project_team/core/app/audio_cubit/audio_state.dart';
-import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/common/widgets/custom_player_play_body.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:flutter/material.dart';
