@@ -1,4 +1,6 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
+import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/general_hikal_view.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/levels_view.dart';
@@ -16,7 +18,9 @@ class HikalView extends StatelessWidget {
       child: ListView(
         children: [
           CustomHikalSectionCard(
-            title: 'General',
+            title: AppLocalizations.of(context)!
+                .translate(LangKeys.generalHikalSection)
+                .toString(),
             imagePath: section.images[66],
             onTap: () {
               Navigator.push(
@@ -24,14 +28,18 @@ class HikalView extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => GeneralHikalView(
                     images: section.images.sublist(67),
-                    title: 'General',
+                    title: AppLocalizations.of(context)!
+                        .translate(LangKeys.generalHikalSection)
+                        .toString(),
                   ),
                 ),
               );
             },
           ),
           CustomHikalSectionCard(
-              title: 'North',
+              title: AppLocalizations.of(context)!
+                  .translate(LangKeys.northHikalSection)
+                  .toString(),
               imagePath: section.images[42],
               onTap: () {
                 Navigator.push(
@@ -39,7 +47,9 @@ class HikalView extends StatelessWidget {
                   MaterialPageRoute(builder: (context) {
                     return HikelLevelView(
                       image: section.images.sublist(24, 47),
-                      title: 'North',
+                      title: AppLocalizations.of(context)!
+                          .translate(LangKeys.northHikalSection)
+                          .toString(),
                       startidexlev2: 7,
                       startquba: 14,
                       startgen: 18,
@@ -48,7 +58,9 @@ class HikalView extends StatelessWidget {
                 );
               }),
           CustomHikalSectionCard(
-              title: 'South',
+              title: AppLocalizations.of(context)!
+                  .translate(LangKeys.southHikalSection)
+                  .toString(),
               imagePath: section.images[63],
               onTap: () {
                 Navigator.push(
@@ -56,7 +68,9 @@ class HikalView extends StatelessWidget {
                   MaterialPageRoute(builder: (context) {
                     return HikelLevelView(
                       image: section.images.sublist(47, 66),
-                      title: 'south',
+                      title: AppLocalizations.of(context)!
+                          .translate(LangKeys.southHikalSection)
+                          .toString(),
                       startidexlev2: 6,
                       startquba: 11,
                       startgen: 15,
@@ -65,7 +79,9 @@ class HikalView extends StatelessWidget {
                 );
               }),
           CustomHikalSectionCard(
-            title: 'East',
+            title: AppLocalizations.of(context)!
+                .translate(LangKeys.eastHikalSection)
+                .toString(),
             imagePath: section.images[17],
             onTap: () {
               Navigator.push(
@@ -73,7 +89,9 @@ class HikalView extends StatelessWidget {
                 MaterialPageRoute(builder: (context) {
                   return HikelLevelView(
                     image: section.images.sublist(0, 24),
-                    title: 'East',
+                    title: AppLocalizations.of(context)!
+                        .translate(LangKeys.eastHikalSection)
+                        .toString(),
                     startidexlev2: 2,
                     startquba: 7,
                     startgen: 16,

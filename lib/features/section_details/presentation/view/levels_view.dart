@@ -1,3 +1,5 @@
+import 'package:cv_project_team/core/language/app_localizations.dart';
+import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/general_hikal_view.dart';
@@ -39,7 +41,9 @@ class HikelLevelView extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
           child: ListView(children: [
             CustomHikalSectionCard(
-              title: 'General',
+              title: AppLocalizations.of(context)!
+                  .translate(LangKeys.generalHikalSection)
+                  .toString(),
               imagePath: image[startgen],
               onTap: () {
                 Navigator.push(
@@ -47,14 +51,17 @@ class HikelLevelView extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => GeneralHikalView(
                       images: image.sublist(startgen),
-                      title: 'General $title',
+                      title:
+                          '$title ${AppLocalizations.of(context)!.translate(LangKeys.generalHikalSection).toString()}',
                     ),
                   ),
                 );
               },
             ),
             CustomHikalSectionCard(
-              title: 'Qoba',
+              title: AppLocalizations.of(context)!
+                  .translate(LangKeys.qoba)
+                  .toString(),
               imagePath: image[startquba],
               onTap: () {
                 Navigator.push(
@@ -62,14 +69,18 @@ class HikelLevelView extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => GeneralHikalView(
                       images: image.sublist(startquba, startgen),
-                      title: 'Qoba',
+                      title: AppLocalizations.of(context)!
+                          .translate(LangKeys.qoba)
+                          .toString(),
                     ),
                   ),
                 );
               },
             ),
             CustomHikalSectionCard(
-              title: 'level one',
+              title: AppLocalizations.of(context)!
+                  .translate(LangKeys.levelOne)
+                  .toString(),
               imagePath: image[0],
               onTap: () {
                 Navigator.push(
@@ -77,14 +88,18 @@ class HikelLevelView extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => GeneralHikalView(
                       images: image.sublist(0, startidexlev2),
-                      title: 'level one',
+                      title: AppLocalizations.of(context)!
+                          .translate(LangKeys.levelOne)
+                          .toString(),
                     ),
                   ),
                 );
               },
             ),
             CustomHikalSectionCard(
-              title: 'level two',
+              title: AppLocalizations.of(context)!
+                  .translate(LangKeys.levelTwo)
+                  .toString(),
               imagePath: image[startidexlev2],
               onTap: () {
                 Navigator.push(
@@ -92,7 +107,9 @@ class HikelLevelView extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => GeneralHikalView(
                       images: image.sublist(startidexlev2, startquba),
-                      title: 'level two',
+                      title: AppLocalizations.of(context)!
+                          .translate(LangKeys.levelTwo)
+                          .toString(),
                     ),
                   ),
                 );

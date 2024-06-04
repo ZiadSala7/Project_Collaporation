@@ -62,4 +62,15 @@ class LangKeys {
   static const String alkhoras = 'alkhoras';
   static const String alsahn = 'alsahn';
   static const String azraa = 'azraa';
+
+  // hikal
+
+  static const String generalHikalSection = 'generalHikalSection';
+  static const String northHikalSection = 'northHikalSection';
+  static const String southHikalSection = 'southHikalSection';
+  static const String eastHikalSection = 'eastHikalSection';
+
+  static const String levelOne = 'levelOne';
+  static const String levelTwo = 'levelTwo';
+  static const String qoba = 'qoba';
 }
