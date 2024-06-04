@@ -1,5 +1,6 @@
 import 'package:cv_project_team/core/app/audio_cubit/audio_cubit.dart';
 import 'package:cv_project_team/core/app/audio_cubit/audio_state.dart';
+import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/common/widgets/custom_player_play_body.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:flutter/material.dart';
@@ -11,10 +12,12 @@ class CustomPlayerPlay extends StatelessWidget {
       {super.key,
       required this.audioPath,
       required this.startAnimation,
-      required this.index});
+      required this.index,
+      required this.title});
   final String audioPath;
   final bool startAnimation;
   final int index;
+  final String title;
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -48,7 +51,7 @@ class CustomPlayerPlay extends StatelessWidget {
             // color:AppColors.secondryColor,
             duration: Duration(milliseconds: 300 + (index * 200)),
             child: ListTile(
-              title: const Text("Audio"),
+              title: Text('$title ${index + 1}'),
               leading: CircleAvatar(
                   radius: 20.sp, child: const Icon(Icons.play_arrow_rounded)),
             ),
