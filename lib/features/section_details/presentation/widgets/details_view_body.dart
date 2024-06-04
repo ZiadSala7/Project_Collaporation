@@ -44,27 +44,27 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(
+              Icons.description,
+              size: 30.sp,
+              color: pageIndex == 0 ? Colors.red : Colors.black,
+            ),
+            label: local!.translate(LangKeys.decription).toString(),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
               Icons.image_rounded,
               size: 30.sp,
-              color: pageIndex == 0 ? Colors.black : Colors.white,
+              color: pageIndex == 1 ? Colors.red : Colors.black,
             ),
-            label: local!.translate(LangKeys.textAndImages).toString(),
+            label: local.translate(LangKeys.textAndImages).toString(),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.audiotrack_rounded,
               size: 30.sp,
-              color: pageIndex == 1 ? Colors.black : Colors.white,
+              color: pageIndex == 2 ? Colors.red : Colors.black,
             ),
             label: local.translate(LangKeys.audios).toString(),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.description,
-              size: 30.sp,
-              color: pageIndex == 2 ? Colors.black : Colors.white,
-            ),
-            label: local.translate(LangKeys.decription).toString(),
           ),
         ],
       ),
@@ -73,15 +73,15 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
         physics: const NeverScrollableScrollPhysics(),
         controller: _pageController,
         children: [
+          DescriptionScreen(
+            section: widget.section,
+          ),
           widget.section.id == '5'
               ? HikalView(section: widget.section)
               : ImagesText(
                   images: widget.section.images,
                 ),
           AudioScreen(
-            section: widget.section,
-          ),
-          DescriptionScreen(
             section: widget.section,
           ),
         ],
