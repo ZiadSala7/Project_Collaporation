@@ -14,7 +14,6 @@ class HikalView extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 10.h,
           crossAxisSpacing: 10.w,
-          childAspectRatio: 1.0999,
           children: [
             CustomHikalSectionCard(
               title: 'General',
@@ -49,7 +48,7 @@ class CustomHikalSectionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(6),
-      height: 200.h,
+      height: 250.h,
       width: 150.w,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
