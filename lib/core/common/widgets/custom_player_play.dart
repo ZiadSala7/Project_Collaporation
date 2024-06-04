@@ -44,9 +44,11 @@ class CustomPlayerPlay extends StatelessWidget {
             transform: Matrix4.translationValues(
                 startAnimation ? 0 : screenWidth, 0, 0),
             height: 50.h,
+            padding: const EdgeInsets.all(8),
             alignment: Alignment.centerRight,
             color: AppColors.appGrey3,
             margin: const EdgeInsets.all(8),
+
             // color:AppColors.secondryColor,
             duration: Duration(milliseconds: 300 + (index * 200)),
             child: ListTile(
