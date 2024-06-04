@@ -37,73 +37,68 @@ class HikelLevelView extends StatelessWidget {
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
-          child: GridView.count(
-              crossAxisCount: 2,
-              mainAxisSpacing: 15.h,
-              crossAxisSpacing: 15.w,
-              childAspectRatio: .7.h,
-              children: [
-                CustomHikalSectionCard(
-                  title: 'General',
-                  imagePath: image[startgen],
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GeneralHikalView(
-                          images: image.sublist(startgen),
-                          title: 'General $title',
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                CustomHikalSectionCard(
-                  title: 'Qoba',
-                  imagePath: image[startquba],
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GeneralHikalView(
-                          images: image.sublist(startquba, startgen),
-                          title: 'Qoba',
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                CustomHikalSectionCard(
-                  title: 'level one',
-                  imagePath: image[0],
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GeneralHikalView(
-                          images: image.sublist(0, startidexlev2),
-                          title: 'level one',
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                CustomHikalSectionCard(
-                  title: 'level two',
-                  imagePath: image[startidexlev2],
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GeneralHikalView(
-                          images: image.sublist(startidexlev2, startquba),
-                          title: 'level two',
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              ]),
+          child: ListView(children: [
+            CustomHikalSectionCard(
+              title: 'General',
+              imagePath: image[startgen],
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GeneralHikalView(
+                      images: image.sublist(startgen),
+                      title: 'General $title',
+                    ),
+                  ),
+                );
+              },
+            ),
+            CustomHikalSectionCard(
+              title: 'Qoba',
+              imagePath: image[startquba],
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GeneralHikalView(
+                      images: image.sublist(startquba, startgen),
+                      title: 'Qoba',
+                    ),
+                  ),
+                );
+              },
+            ),
+            CustomHikalSectionCard(
+              title: 'level one',
+              imagePath: image[0],
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GeneralHikalView(
+                      images: image.sublist(0, startidexlev2),
+                      title: 'level one',
+                    ),
+                  ),
+                );
+              },
+            ),
+            CustomHikalSectionCard(
+              title: 'level two',
+              imagePath: image[startidexlev2],
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GeneralHikalView(
+                      images: image.sublist(startidexlev2, startquba),
+                      title: 'level two',
+                    ),
+                  ),
+                );
+              },
+            ),
+          ]),
         ));
   }
 }
