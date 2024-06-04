@@ -18,7 +18,12 @@ class AboutViewBody extends StatelessWidget {
           duration: animationDuration,
           child: CircleAvatar(
             radius: 60.h,
-            child: Image.asset("assets/images/turath.png"),
+            child: Image.asset(
+              "assets/images/splashh.png",
+              fit: BoxFit.fill,
+              width: 75.w,
+              height: 75.h,
+            ),
           ),
         ),
         SizedBox(
