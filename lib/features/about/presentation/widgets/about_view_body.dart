@@ -3,6 +3,7 @@ import 'package:cv_project_team/core/common/animations/animate_do.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
+import 'package:cv_project_team/features/about/presentation/widgets/turath_email_link.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -34,6 +35,13 @@ class AboutViewBody extends StatelessWidget {
               style: Styless.textStyle20,
             ),
           ),
+        ),
+        SizedBox(
+          height: 40.h,
+        ),
+        const CustomFadeInDown(
+          duration: animationDuration,
+          child: TurathEmailLink(),
         ),
       ],
     );
