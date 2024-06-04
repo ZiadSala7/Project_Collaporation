@@ -15,7 +15,7 @@ class HikalView extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 15.h,
           crossAxisSpacing: 15.w,
-          childAspectRatio: .5.sp,
+          childAspectRatio: .7.h,
           children: [
             CustomHikalSectionCard(
               title: 'General',
