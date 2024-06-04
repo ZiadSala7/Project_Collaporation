@@ -1,6 +1,6 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
-import 'package:cv_project_team/features/section_details/presentation/widgets/image_text_body.dart';
+import 'package:cv_project_team/features/section_details/presentation/view/images_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -24,8 +24,8 @@ class HikalView extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => ImageTextBody(
-                              images: section.images,
+                        builder: (context) => ImagesText(
+                              images: section.images.sublist(67),
                             )));
               },
             ),

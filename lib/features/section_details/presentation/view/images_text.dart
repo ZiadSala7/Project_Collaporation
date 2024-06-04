@@ -4,17 +4,13 @@ import 'package:cv_project_team/features/section_details/presentation/widgets/im
 import 'package:flutter/material.dart';
 
 class ImagesText extends StatelessWidget {
-  const ImagesText({super.key, required this.section});
-  final SectionCardModels section;
+  const ImagesText({super.key,  required this.images});
+  final List<String> images;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: section.id == '5'
-            ? HikalView(
-                section: section,
-              )
-            : ImageTextBody(
-                images: section.images,
+        body: ImageTextBody(
+                images: images,
               ));
   }
 }
