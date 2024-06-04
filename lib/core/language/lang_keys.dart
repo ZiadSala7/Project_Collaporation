@@ -73,4 +73,7 @@ class LangKeys {
   static const String levelOne = 'levelOne';
   static const String levelTwo = 'levelTwo';
   static const String qoba = 'qoba';
+
+  static const String aboutTurathTeam = 'aboutTurathTeam';
+  static const String contactWithUs = 'contactWithUs';
 }

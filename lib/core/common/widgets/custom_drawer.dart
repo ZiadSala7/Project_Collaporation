@@ -6,6 +6,7 @@ import 'package:cv_project_team/core/styles/colors/app_color.dart';
 import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/common/widgets/custom_list_tile.dart';
 import 'package:cv_project_team/features/about/presentation/about_view.dart';
+import 'package:cv_project_team/features/about/presentation/contact_page.dart';
 import 'package:cv_project_team/features/home/presentation/views/home_view.dart';
 import 'package:cv_project_team/features/settings/settings_view.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class CustomDrawer extends StatelessWidget {
       child: Drawer(
         child: Column(
           children: [
-             const UserAccountsDrawerHeader(
+            const UserAccountsDrawerHeader(
               accountName: Text(''),
               accountEmail: Text(''),
               decoration: BoxDecoration(
@@ -81,6 +82,24 @@ class CustomDrawer extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const AboutView(),
+                  ),
+                );
+              },
+            ),
+            CustomListTile(
+              text: AppLocalizations.of(context)!
+                  .translate(LangKeys.contactWithUs)
+                  .toString(),
+              icon: Icon(
+                Icons.quick_contacts_mail_sharp,
+                size: 28.sp,
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ContactPage(),
                   ),
                 );
               },
