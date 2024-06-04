@@ -1,6 +1,6 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/common/widgets/custom_app_image.dart';
-import 'package:cv_project_team/features/imageview/presentation/views/image_view_details.dart';
+import 'package:cv_project_team/features/section_details/presentation/view/image_view_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -16,7 +16,7 @@ class ImageTextBody extends StatelessWidget {
         vertical: 16.h,
       ),
       child: GridView.count(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           crossAxisCount: 3,
           crossAxisSpacing: 8.w,
           mainAxisSpacing: 8.h,

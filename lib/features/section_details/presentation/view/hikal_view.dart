@@ -1,5 +1,4 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
-import 'package:cv_project_team/core/styles/image/app_images.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -60,7 +59,7 @@ class CustomHikalSectionCard extends StatelessWidget {
               color: Colors.black.withOpacity(0.1),
               spreadRadius: 1,
               blurRadius: 1,
-              offset: Offset(0, 1),
+              offset: const Offset(0, 1),
             )
           ]),
       child: Column(
