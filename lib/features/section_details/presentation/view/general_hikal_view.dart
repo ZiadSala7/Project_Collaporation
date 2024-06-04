@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import 'images_text.dart';
 
 class GeneralHikalView extends StatelessWidget {
-  const GeneralHikalView({super.key, required this.images});
+  const GeneralHikalView(
+      {super.key, required this.images, required this.title});
   final List<String> images;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +19,7 @@ class GeneralHikalView extends StatelessWidget {
             },
             icon: const Icon(Icons.arrow_back_ios)),
         title: Text(
-          'General',
+          title,
           style: Styless.textStyle14,
         ),
         centerTitle: true,
