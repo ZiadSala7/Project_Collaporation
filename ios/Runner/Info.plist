@@ -5,6 +5,7 @@
 		<key>LSApplicationQueriesSchemes</key>
 		<array>
 			<string>email address</string>
+			<string>https</string>
 		</array>
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
