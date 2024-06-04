@@ -11,12 +11,14 @@ class SectionCardModels {
     required this.imageUrl,
     required this.description,
     required this.images,
+    required this.descriptionScreenTitle,
   });
 
   final String id;
   final String name;
   final String imageUrl;
   final String description;
+  final String descriptionScreenTitle;
   final List<String> audioPath;
   final List<String> images;
 
@@ -27,6 +29,7 @@ class SectionCardModels {
     String? description,
     List<String>? audioPath,
     List<String>? images,
+    String? descriptionScreenTitle,
   }) =>
       SectionCardModels(
         id: id ?? this.id,
@@ -35,6 +38,8 @@ class SectionCardModels {
         description: description ?? this.description,
         audioPath: audioPath ?? this.audioPath,
         images: images ?? this.images,
+        descriptionScreenTitle:
+            descriptionScreenTitle ?? this.descriptionScreenTitle,
       );
 
   static List<SectionCardModels> fakeValues = [
@@ -46,6 +51,7 @@ class SectionCardModels {
       description: LangKeys.descriptionTheFort,
       audioPath: [Assets.audiosMdkhlAud],
       images: ImageClass().alHesn,
+      descriptionScreenTitle: LangKeys.alhesn,
     ),
     section.copyWith(
       id: '3',
@@ -54,6 +60,7 @@ class SectionCardModels {
       description: LangKeys.descriptionTableHall,
       audioPath: [Assets.audiosMaaedaAud],
       images: ImageClass().salatAlmaaeda,
+      descriptionScreenTitle: LangKeys.saletAlmaaeda,
     ),
     section.copyWith(
       id: '4',
@@ -62,6 +69,7 @@ class SectionCardModels {
       description: LangKeys.descriptionSouthTempleRoom,
       audioPath: [Assets.audiosShklAud],
       images: ImageClass().southHekal,
+      descriptionScreenTitle: LangKeys.southHekal,
     ),
     section.copyWith(
       id: '5',
@@ -74,6 +82,7 @@ class SectionCardModels {
         Assets.audiosNorthHenyaAudios
       ],
       images: ImageClass().alHekal,
+      descriptionScreenTitle: LangKeys.alhekal,
     ),
     section.copyWith(
       id: '6',
@@ -82,6 +91,7 @@ class SectionCardModels {
       description: LangKeys.descriptionNorthHulkRoom,
       audioPath: [Assets.audiosNklAud],
       images: ImageClass().northHekal,
+      descriptionScreenTitle: LangKeys.northHekal,
     ),
     section.copyWith(
       id: '7',
@@ -93,14 +103,17 @@ class SectionCardModels {
         Assets.audiosLastPartKhorasAudios,
       ],
       images: ImageClass().oldKhoras,
+      descriptionScreenTitle: LangKeys.alkhoras,
     ),
     section.copyWith(
-        id: '8',
-        name: LangKeys.dish,
-        imageUrl: _imagesUrls[7],
-        description: LangKeys.descriptionDish,
-        audioPath: [Assets.audiosShnAud],
-        images: ImageClass().alSahn),
+      id: '8',
+      name: LangKeys.dish,
+      imageUrl: _imagesUrls[7],
+      description: LangKeys.descriptionDish,
+      audioPath: [Assets.audiosShnAud],
+      images: ImageClass().alSahn,
+      descriptionScreenTitle: LangKeys.alsahn,
+    ),
     section.copyWith(
       id: '9',
       name: LangKeys.maddonnaCurch,
@@ -108,6 +121,7 @@ class SectionCardModels {
       description: LangKeys.descriptionMadonnaCurch,
       audioPath: [Assets.audiosAzraaAud],
       images: ImageClass().azraa,
+      descriptionScreenTitle: LangKeys.azraa,
     ),
   ];
 }
@@ -119,6 +133,7 @@ final section = SectionCardModels(
   description: LangKeys.descriptionTheEntrance,
   audioPath: [Assets.audiosMdkhlAud],
   images: ImageClass().alMadkhal,
+  descriptionScreenTitle: LangKeys.almadkhal,
 );
 
 const _imagesUrls = [

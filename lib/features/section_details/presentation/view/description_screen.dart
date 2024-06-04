@@ -9,7 +9,7 @@ class DescriptionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(section.description),
+        child: Text(section.descriptionScreenTitle),
       ),
     );
   }

@@ -52,4 +52,14 @@ class LangKeys {
   static const String startTour = 'begin';
 
   static const String redMonasteryDescribtion = 'redMonasteryDescribtion';
+// Secrions Descriptions
+  static const String almadkhal = 'almadkhal';
+  static const String alhesn = 'alhesn';
+  static const String saletAlmaaeda = 'saletAlmaaeda';
+  static const String southHekal = 'southHekal';
+  static const String alhekal = 'alhekal';
+  static const String northHekal = 'northHekal';
+  static const String alkhoras = 'alkhoras';
+  static const String alsahn = 'alsahn';
+  static const String azraa = 'azraa';
 }
