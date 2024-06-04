@@ -11,21 +11,18 @@ class DetailsView extends StatelessWidget {
   final SectionCardModels section;
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: section.id,
-      child: Scaffold(
-        drawer: const CustomDrawer(),
-        appBar: AppBar(
-          backgroundColor: AppColors.appGrey2,
-          title: Text(
-            AppLocalizations.of(context)!.translate(section.name).toString(),
-            style: Styless.textStyle28,
-          ),
-          centerTitle: true,
+    return Scaffold(
+      drawer: const CustomDrawer(),
+      appBar: AppBar(
+        backgroundColor: AppColors.appGrey2,
+        title: Text(
+          AppLocalizations.of(context)!.translate(section.name).toString(),
+          style: Styless.textStyle28,
         ),
-        body: DetailsViewBody(
-          section: section,
-        ),
+        centerTitle: true,
+      ),
+      body: DetailsViewBody(
+        section: section,
       ),
     );
   }

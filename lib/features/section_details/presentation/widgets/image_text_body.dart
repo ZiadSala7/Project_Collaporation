@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ImageTextBody extends StatelessWidget {
-  const ImageTextBody({super.key, required this.section});
-  final SectionCardModels section;
+  const ImageTextBody({super.key, required this.images});
+  final List<String> images;
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +21,10 @@ class ImageTextBody extends StatelessWidget {
           crossAxisSpacing: 8.w,
           mainAxisSpacing: 8.h,
           childAspectRatio: 5 / 7,
-          children: List.generate(section.images.length, (index) {
+          children: List.generate(images.length, (index) {
             return ShowImage(
               index: index,
-              section: section,
+              images: images,
             );
           })),
     );
@@ -34,11 +34,11 @@ class ImageTextBody extends StatelessWidget {
 class ShowImage extends StatelessWidget {
   const ShowImage({
     super.key,
-    required this.section,
     required this.index,
+    required this.images,
   });
   final int index;
-  final SectionCardModels section;
+  final List<String> images;
 
   @override
   Widget build(BuildContext context) {
@@ -47,11 +47,11 @@ class ShowImage extends StatelessWidget {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
           return ImageViewDetails(
             index: index,
-            images: section.images,
+            images: images,
           );
         }));
       },
-      child: CustomAppImage(imgPath: section.images[index]),
+      child: CustomAppImage(imgPath: images[index]),
     );
   }
 }
