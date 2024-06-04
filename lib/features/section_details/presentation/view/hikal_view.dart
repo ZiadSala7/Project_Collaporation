@@ -1,6 +1,6 @@
 import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/utils/styles.dart';
-import 'package:cv_project_team/features/section_details/presentation/widgets/image_text_body.dart';
+import 'package:cv_project_team/features/section_details/presentation/view/general_hikal_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,7 +15,7 @@ class HikalView extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 15.h,
           crossAxisSpacing: 15.w,
-          childAspectRatio: 0.999,
+          childAspectRatio: .5.sp,
           children: [
             CustomHikalSectionCard(
               title: 'General',
@@ -24,9 +24,8 @@ class HikalView extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => ImageTextBody(
-                              images: section.images,
-                            )));
+                        builder: (context) => GeneralHikalView(
+                            images: section.images.sublist(67))));
               },
             ),
             CustomHikalSectionCard(
