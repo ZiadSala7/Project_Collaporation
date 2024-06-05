@@ -33,7 +33,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
     return Scaffold(
       // backgroundColor: mobileBackgroundColor,
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 0.5,
         currentIndex: pageIndex,
+        useLegacyColorScheme: false,
         selectedLabelStyle: Styless.textStyle14.copyWith(color: Colors.red),
         unselectedLabelStyle: Styless.textStyle14,
         backgroundColor: AppColors.appGrey2,
