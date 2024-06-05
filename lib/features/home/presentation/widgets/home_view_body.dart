@@ -11,7 +11,7 @@ class HomeViewBody extends StatelessWidget {
     return Container(
       color: AppColors.appGrey1,
       child: ListWheelScrollView.useDelegate(
-        itemExtent: 330.h,
+        itemExtent: 360.h,
         physics: const FixedExtentScrollPhysics(),
         childDelegate: ListWheelChildBuilderDelegate(
           childCount: 7,
