@@ -2,11 +2,11 @@ import 'package:cv_project_team/core/common/models/section_model.dart';
 import 'package:cv_project_team/core/language/app_localizations.dart';
 import 'package:cv_project_team/core/language/lang_keys.dart';
 import 'package:cv_project_team/core/styles/colors/app_color.dart';
+import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/audio_screen.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/description_screen.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/hikal_view.dart';
 import 'package:cv_project_team/features/section_details/presentation/view/images_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -32,8 +32,9 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
     final local = AppLocalizations.of(context);
     return Scaffold(
       // backgroundColor: mobileBackgroundColor,
-      bottomNavigationBar: CupertinoTabBar(
-        height: 55.h,
+      bottomNavigationBar: BottomNavigationBar(
+        selectedLabelStyle: Styless.textStyle14.copyWith(color: Colors.red),
+        unselectedLabelStyle: Styless.textStyle14,
         backgroundColor: AppColors.appGrey2,
         onTap: (index) {
           _pageController.jumpToPage(index);
@@ -56,7 +57,7 @@ class _DetailsViewBodyState extends State<DetailsViewBody> {
               size: 30.sp,
               color: pageIndex == 1 ? Colors.red : Colors.black,
             ),
-            label: local.translate(LangKeys.textAndImages).toString(),
+            label: local.translate(LangKeys.pictures).toString(),
           ),
           BottomNavigationBarItem(
             icon: Icon(

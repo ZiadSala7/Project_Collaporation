@@ -43,7 +43,7 @@ class LangKeys {
 
   static const String selectSection = 'selectSection';
 
-  static const String textAndImages = 'textAndImages';
+  static const String pictures = 'pictures';
   static const String audios = 'audios';
   static const String videos = 'videos';
   static const String decription = 'description';
