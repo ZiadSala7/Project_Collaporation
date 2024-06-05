@@ -1,6 +1,6 @@
 {
   "language": "العربية",
-  "app_name": "Turath",
+  "app_name": "turath",
   "lang_code": "English",
   "settings": "settings",
   "about": "about",
@@ -45,10 +45,10 @@
 
   "selectSection": "Select A Section",
 
-  "pictures": "Pictures",
+  "textAndImages": "Text and images",
   "audios": "Audios",
   "videos": "Videos",
-  "description" : "Description",
+  "description" : "description",
   
   "guideVideo" : "Guide video",
   "begin" : "Start yout tour",
