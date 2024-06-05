@@ -10,7 +10,7 @@ ThemeData appTheme() {
         fontSize: 10,
         color: Colors.black,
         // fontFamily: FontFamilyHelper.getLocalizedFamily(),
-        fontFamily: 'Rakkas',
+        fontFamily: 'ArEn',
       ),
     ),
   );
