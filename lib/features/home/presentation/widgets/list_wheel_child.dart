@@ -32,6 +32,7 @@ class ListWheelChild extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.all(Radius.circular(15.r)),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
@@ -45,7 +46,7 @@ class ListWheelChild extends StatelessWidget {
                     children: [
                       Text(
                         other(context)[index].imageName,
-                        style: Styless.textStyle24.copyWith(
+                        style: Styless.textStyle20 .copyWith(
                           decoration: other(context)[index].isLock
                               ? TextDecoration.lineThrough
                               : TextDecoration.none,
@@ -76,7 +77,7 @@ class ListWheelChild extends StatelessWidget {
           icon: Icon(
             Icons.add_task_rounded,
             color: Colors.green,
-            size: 25.sp,
+            size: 22.sp,
           ),
           isLock: false),
       SnapImage(
@@ -84,42 +85,42 @@ class ListWheelChild extends StatelessWidget {
           imageName: AppLocalizations.of(context)!
               .translate(LangKeys.azraaDer)
               .toString(),
-          icon: const Icon(Icons.lock),
+          icon: Icon(Icons.lock,size: 22.sp,),
           isLock: true),
       SnapImage(
           imagePath: AppImages.imagesOthersMargergesDer,
           imageName: AppLocalizations.of(context)!
               .translate(LangKeys.maryGerges)
               .toString(),
-          icon: const Icon(Icons.lock),
+          icon: Icon(Icons.lock,size: 22.sp,),
           isLock: true),
       SnapImage(
           imagePath: AppImages.imagesOthersAzraaDrankaDer,
           imageName: AppLocalizations.of(context)!
               .translate(LangKeys.azraaDranka)
               .toString(),
-          icon: const Icon(Icons.lock),
+          icon: Icon(Icons.lock,size: 22.sp,),
           isLock: true),
       SnapImage(
           imagePath: AppImages.imagesOthersMhrqDer,
           imageName: AppLocalizations.of(context)!
               .translate(LangKeys.mahraqDer)
               .toString(),
-          icon: const Icon(Icons.lock),
+          icon: Icon(Icons.lock,size: 22.sp,),
           isLock: true),
       SnapImage(
           imagePath: AppImages.imagesOthersShohadaa2Der,
           imageName: AppLocalizations.of(context)!
               .translate(LangKeys.alShohadaa)
               .toString(),
-          icon: const Icon(Icons.lock),
+          icon: Icon(Icons.lock,size: 22.sp,),
           isLock: true),
       SnapImage(
           imagePath: AppImages.imagesOthersWhiteDer,
           imageName: AppLocalizations.of(context)!
               .translate(LangKeys.whiteDer)
               .toString(),
-          icon: const Icon(Icons.lock),
+          icon: Icon(Icons.lock,size: 22.sp,),
           isLock: true),
     ];
     return imgs;

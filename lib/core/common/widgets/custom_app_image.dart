@@ -11,12 +11,11 @@ class CustomAppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16),
-      child: AspectRatio(
-        aspectRatio: 2.6.w / 2.h, //width / height
-        child: Image.asset(
-          imgPath,
-          fit: BoxFit.fill,
-        ),
+      child: Image.asset(
+        imgPath,
+        fit: BoxFit.fill,
+        height: 250.h,
+        width: 320.w,
       ),
     );
   }
