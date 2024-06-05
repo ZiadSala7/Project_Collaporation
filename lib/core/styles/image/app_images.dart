@@ -353,6 +353,6 @@ class AppImages {
   static const String imagesSouthHekalHkl8 =
       "assets/images/south hekal/hkl8.jpg";
   // =======================================
-  static const String imagesTurath = "assets/images/turath.png";
+  static const String imagesTurath = "assets/images/splashh.png";
   static const String imagesSmile = "assets/images/smile.png";
 }
