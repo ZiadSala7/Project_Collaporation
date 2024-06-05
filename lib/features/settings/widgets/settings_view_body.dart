@@ -40,8 +40,7 @@ class SettingsViewBdy extends StatelessWidget {
                             ? appCubit.toArabic()
                             : appCubit.toEnglish();
                       },
-                      width: 100.w,
-                      height: 40.h,
+        
                       child: Text(
                         AppLocalizations.of(context)!
                             .translate(LangKeys.language)

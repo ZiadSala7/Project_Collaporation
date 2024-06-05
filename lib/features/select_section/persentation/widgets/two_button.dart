@@ -20,8 +20,6 @@ class TwoButton extends StatelessWidget {
         CustomFadeInUp(
           duration: animationDuration,
           child: CustomLinearButton(
-            height: 65.h,
-            width: 150.w,
             onPressed: () {
               Navigator.push(
                   context,
@@ -40,14 +38,11 @@ class TwoButton extends StatelessWidget {
         CustomFadeInUp(
           duration: animationDuration,
           child: CustomLinearButton(
-            height: 65.h,
-            width: 150.w,
             onPressed: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) =>
-                          const VideoView()));
+                      builder: (BuildContext context) => const VideoView()));
             },
             child: Text(
               AppLocalizations.of(context)!
