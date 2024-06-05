@@ -1,9 +1,9 @@
 flutter_native_splash:
   # for android 11 and ios
-  image: "assets/images/turath.png"
+  image: "assets/images/splashh.png"
   color: "#ffffff"
 
   android_12: 
-    image: "assets/images/turath.png"
+    image: "assets/images/splashh.png"
     # image: "assets/images/turath1.png"
     color: "#ffffff"
