@@ -7,7 +7,7 @@ import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/select_section_view.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/video_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 class TwoButton extends StatelessWidget {
   const TwoButton({super.key});
