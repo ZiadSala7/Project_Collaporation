@@ -229,8 +229,6 @@ class AppImages {
   static const String imagesAzraaAz4 = "assets/images/azraa/az4.jpg";
   static const String imagesAzraaAz5 = "assets/images/azraa/az5.jpg";
   // =======================================
-  static const String imagesLogo = "assets/images/logo.jpg";
-  static const String imagesNoNetwork = "assets/images/no_network.jpg";
 
   static const String imagesNorthHekalNkl1 =
       "assets/images/north hekal/nkl1.jpg";
@@ -306,21 +304,7 @@ class AppImages {
   // ==============================
   static const String imagesOutsideDerOut1 =
       "assets/images/outside_der/out1.jpg";
-  static const String imagesOutsideDerOut2 =
-      "assets/images/outside_der/out2.jpg";
-  static const String imagesOutsideDerOut3 =
-      "assets/images/outside_der/out3.jpg";
-  static const String imagesOutsideDerOut4 =
-      "assets/images/outside_der/out4.jpg";
-  static const String imagesOutsideDerOut5 =
-      "assets/images/outside_der/out5.jpg";
-  static const String imagesOutsideDerOut6 =
-      "assets/images/outside_der/out6.jpg";
-  // ===========================
-  static const String imagesOutsideDerOut7 =
-      "assets/images/outside_der/out7.jpg";
-  static const String imagesPageUnderBuild =
-      "assets/images/page_under_build.jpg";
+
   static const String imagesSalatAlmaaedaMaaeda1 =
       "assets/images/salat Almaaeda/maaeda1.jpg";
   static const String imagesSalatAlmaaedaMaaeda2 =
