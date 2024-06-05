@@ -124,7 +124,7 @@ class CustomHikalSectionCard extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20.h),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(15),
           border: Border.all(width: 4, color: Colors.brown),
           boxShadow: [
             BoxShadow(
@@ -149,7 +149,7 @@ class CustomHikalSectionCard extends StatelessWidget {
             SizedBox(height: 10.h),
             Text(
               title,
-              style: Styless.textStyle14,
+              style: Styless.textStyle20,
             ),
           ],
         ),

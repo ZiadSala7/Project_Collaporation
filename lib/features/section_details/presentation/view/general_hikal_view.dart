@@ -20,7 +20,7 @@ class GeneralHikalView extends StatelessWidget {
             icon: const Icon(Icons.arrow_back_ios)),
         title: Text(
           title,
-          style: Styless.textStyle14,
+          style: Styless.textStyle20,
         ),
         centerTitle: true,
         backgroundColor: AppColors.appGrey1,
