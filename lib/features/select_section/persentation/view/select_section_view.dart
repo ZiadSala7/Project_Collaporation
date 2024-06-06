@@ -48,15 +48,18 @@ class _SelectSectionViewState extends State<SelectSectionView> {
             SizedBox(height: 24.h),
             CustomFadeInDown(
               duration: animationDuration,
-              child: Text(
-                  AppLocalizations.of(context)!
-                      .translate(LangKeys.selectSection)
-                      .toString(),
-                  style: TextStyle(
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.appBlack,
-                  )),
+              child: Padding(
+                padding: EdgeInsets.only(left: 16.w),
+                child: Text(
+                    AppLocalizations.of(context)!
+                        .translate(LangKeys.selectSection)
+                        .toString(),
+                    style: TextStyle(
+                      fontSize: 20.sp,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.appBlack,
+                    )),
+              ),
             ),
             SizedBox(
               height: 32.h,
