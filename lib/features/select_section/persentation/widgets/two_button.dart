@@ -7,6 +7,7 @@ import 'package:cv_project_team/core/utils/styles.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/select_section_view.dart';
 import 'package:cv_project_team/features/select_section/persentation/view/video_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class TwoButton extends StatelessWidget {
@@ -14,7 +15,7 @@ class TwoButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         CustomFadeInUp(
@@ -32,9 +33,11 @@ class TwoButton extends StatelessWidget {
                   .translate(LangKeys.startTour)
                   .toString(),
               style: Styless.textStyle20,
+              textAlign: TextAlign.center,
             ),
           ),
         ),
+        SizedBox(height: 15.h),
         CustomFadeInUp(
           duration: animationDuration,
           child: CustomLinearButton(
@@ -49,6 +52,7 @@ class TwoButton extends StatelessWidget {
                   .translate(LangKeys.guideVideo)
                   .toString(),
               style: Styless.textStyle20,
+              textAlign: TextAlign.center,
             ),
           ),
         ),
